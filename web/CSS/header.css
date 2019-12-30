@@ -1,0 +1,19 @@
+.cart{
+    display: inline-box;
+}
+
+.cartIcon{
+    filter: invert(1);
+    height: 40px;
+}
+
+.badge-danger{
+    position: absolute;
+    left:10px;
+    background-color: red;
+}
+
+header{
+    padding: 10px;
+}
+

@@ -21,6 +21,7 @@ h1{
 
 .image{
     display: inline-block;
+    margin-top: 100px;
 }
 
 .infoArea{
@@ -66,6 +67,7 @@ h1{
      width: 100%;
      font-size: 20px;
      font-weight: bold;
+     text-align: center;
 }
 
  h2{
@@ -102,7 +104,7 @@ h1{
     width: 100%;
     height: 10px;
     background: white;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 form p{
@@ -112,6 +114,7 @@ form p{
 .flowerNo{
     font-size: 40px;
 }
+
 
 .slider::-webkit-slider-thumb{
     transition: all 0.2s;
@@ -128,6 +131,52 @@ form p{
 
 .slider:focus{
     outline: none;
+}
+
+.buttonDiv{
+    margin-top: 50px;
+    transition: 0.2s;
+    border-radius: 16px;
+    text-align: center;
+    display: inline-block;
+    background-color:  transparent;
+    color: white;
+    opacity: 0;
+    font-weight: bold;
+    width: 80%;
+}
+
+.buttonDiv p, .buttonDiv h3{
+    display: inline-block;
+}
+
+.buttonDiv h3{
+    margin-right: 10px;
+}
+
+.buttonDiv:hover{
+    transform: translateY(-5%);
+    width: 100%;
+}
+
+.purchaseBt:hover{
+    background-color: palevioletred;
+    color: white;
+}
+
+.section{
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.section select{
+    width: 120px;
+}
+
+#wrapChoice, #flowerChoice{
+    font-size: 25px;
 }
 
 

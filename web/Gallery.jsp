@@ -20,7 +20,7 @@
         <!-- HEADER -->
         <header>
             <div class="cart">
-                <img class="cartIcon" src="Pics\shopping_cart-24px.svg"/> <span class="badge badge-danger">
+                my orders <span class="badge badge-danger">
                     <%
                         // Just to display cart quantity
                         Integer quantity = (Integer) session.getAttribute("cartQuantity");

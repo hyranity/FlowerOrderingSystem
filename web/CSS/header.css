@@ -8,9 +8,10 @@
 }
 
 .badge-danger{
-    position: absolute;
-    left:10px;
-    background-color: red;
+    background-color: white;
+    color: darkslateblue;
+    font-weight: bold;
+    margin: 4px;
 }
 
 header{

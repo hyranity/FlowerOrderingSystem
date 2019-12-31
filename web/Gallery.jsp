@@ -116,7 +116,7 @@
     <script>
         $(document).ready(function(){
             $(".cell").click(function(){
-                window.location.href="AddOrderServlet";
+                window.location.href="flower.jsp";
             });
         });
     </script>

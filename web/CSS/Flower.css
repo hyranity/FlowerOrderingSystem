@@ -96,6 +96,23 @@ h1{
     border-bottom-width: 5px;
     border-bottom-color: white;
     font-size: 20px;
+    margin-bottom: 40px;
+}
+
+input::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+
+.customize form input[type=textarea]{
+    background-color: transparent;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 5px;
+    border-bottom-color: white;
+    font-size: 20px;
 }
 
 .slider{
@@ -134,14 +151,13 @@ form p{
 }
 
 .buttonDiv{
-    margin-top: 50px;
     transition: 0.2s;
     border-radius: 16px;
+    margin-top: 40px;
     text-align: center;
     display: inline-block;
     background-color:  transparent;
     color: white;
-    opacity: 0;
     font-weight: bold;
     width: 80%;
 }
@@ -177,6 +193,22 @@ form p{
 
 #wrapChoice, #flowerChoice{
     font-size: 25px;
+}
+
+input[type="radio"]:checked+label{ 
+    opacity: 1;
+} 
+
+input[type="radio"]+label{ 
+    background-color: black;
+    padding: 10px;
+    opacity: 0.3;
+} 
+
+input[type="radio"] {
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 

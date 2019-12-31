@@ -1,10 +1,5 @@
-.cart{
-    display: inline-box;
-}
-
-.cartIcon{
-    filter: invert(1);
-    height: 40px;
+body{
+    background-color: white;
 }
 
 .badge-danger{
@@ -15,6 +10,47 @@
 }
 
 header{
+    width: 100%;
     padding: 10px;
+    overflow: hidden;
+    background-color: darkslateblue;
+    color: white;
+    text-align: left;
 }
 
+header div div{
+    transition: 0.2s;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header div div:hover{
+    background-color: white;
+    color: darkslateblue;
+}
+
+.siteName{
+    font-size: 50px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.others{
+    display: inline-block;
+    text-align: left;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}

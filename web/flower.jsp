@@ -20,23 +20,18 @@
     <body>
         <!-- HEADER -->
         <header>
-            <div class="cart">
-                my orders <span class="badge badge-danger">
-                    <%
-                        // Just to display cart quantity
-                        Integer quantity = (Integer) session.getAttribute("cartQuantity");
-                        if (quantity == null) {
-                    %>
-                    0
-                    <%
-                    } else {
-                    %>
-                    <%=quantity%>
-                    <%
-                        }
-                    %>
-                </span>
+            <div class="siteName">
+                glory florist
             </div>
+            <div class="others">
+                <div>
+                    Gallery
+                </div>
+                <div>
+                    View my Order
+                </div>
+            </div>
+
         </header>
         <div class="main">
             <div class="image">
@@ -60,7 +55,7 @@
                             <p>Flower type</p>
                             <br/>
                             <select id="flowerTypeChooser">
-                                <option>Rose</option>
+                                <option >Rose</option>
                                 <option>Lily</option>
                                 <option>Carnation</option>
                                 <option>Gerbera</option>
@@ -80,79 +75,95 @@
                             </select>
                         </div>
                         <br/>
+                        <br/>
+                        <br/>
+                        <input placeholder="To" type="text">
+                        <br/>
+                        <input placeholder="From" type="text">
+                        <br/>
+                        <input placeholder="Card message" type="text">
+                        <br/>
+                        <h3 style="margin-bottom: -10px;">How do you want to get your flower?</h3>
+                        <br/>
+                        <input type="radio" name="collectionChoice" id="walkin" checked> <label for="walkin">I'll collect it</label>
+                       <input type="radio" name="collectionChoice" id="delivery" > <label for="delivery">Deliver it</label>
+                        <br/>
                         <div class="buttonDiv" id="choice" >
                             <h3>Buy </h3><p id="flowerChoice"></p>, <p id="wrapChoice"></p> </div>
-                            
-                        </div>
-                    </form>
                 </div>
+                </form>
             </div>
         </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-        $(".slider").change(function () {
+            // Set default button value
+            $("#flowerChoice").text("Rose");
+            $(".buttonDiv").css("background-color", "white");
+            $("#choice").css("color", "crimson");
+            $("#wrapChoice").text("Wrapped in red");
 
-        var quantity = parseFloat(this.value) * 12;
+            $(".slider").change(function () {
+
+                var quantity = parseFloat(this.value) * 12;
                 $(".price").text("RM" + quantity);
                 $(".flowerNo").text(quantity / 12);
                 if (quantity / 12 == 1)
-                $("#stalkText").text("stalk");
+                    $("#stalkText").text("stalk");
                 else
-                $("#stalkText").text("stalks");
-        });
-                $("#colorChooser").change(function (){
-                    $(".buttonDiv").css("opacity", "1");
-        if (this.value == "Red"){
-            $(".buttonDiv").css("background-color", "white");
-                $("#choice").css("color", "crimson");
-                $("#wrapChoice").text("Wrapped in red");
-            }
-                if (this.value == "Cream"){
+                    $("#stalkText").text("stalks");
+            });
+            $("#colorChooser").change(function () {
+
+                if (this.value == "Red") {
+                    $(".buttonDiv").css("background-color", "white");
+                    $("#choice").css("color", "crimson");
+                    $("#wrapChoice").text("Wrapped in red");
+                }
+                if (this.value == "Cream") {
                     $("#choice").css("background-color", "white");
-                $("#choice").css("color", "darksalmon");
-                $("#wrapChoice").text("Wrapped in cream");
-            }
-                if (this.value == "Purple"){
+                    $("#choice").css("color", "darksalmon");
+                    $("#wrapChoice").text("Wrapped in cream");
+                }
+                if (this.value == "Purple") {
                     $("#choice").css("background-color", "white");
-                   $("#choice").css("color", "darkorchid");
-                   $("#wrapChoice").text("Wrapped in purple");
-               }
-                if (this.value == "Blue"){
+                    $("#choice").css("color", "darkorchid");
+                    $("#wrapChoice").text("Wrapped in purple");
+                }
+                if (this.value == "Blue") {
                     $("#choice").css("background-color", "white");
                     $("#choice").css("color", "blue");
                     $("#wrapChoice").text("Wrapped in blue");
                 }
-                if (this.value == "Black"){
+                if (this.value == "Black") {
                     $("#choice").css("color", "white");
                     $("#choice").css("background-color", "black");
                     $("#wrapChoice").text("Wrapped in black");
                 }
-                if (this.value == "White"){
+                if (this.value == "White") {
                     $("#choice").css("color", "black");
                     $("#choice").css("background-color", "white");
                     $("#wrapChoice").text("Wrapped in white");
                 }
-        });
-        $("#flowerTypeChooser").change(function (){
-            $(".buttonDiv").css("opacity", "1");
-        if (this.value == "Rose"){
-            $("#flowerChoice").text("Rose");
-            }
-                if (this.value == "Lily"){
-               $("#flowerChoice").text("Lily");
-            }
-                if (this.value == "Carnation"){
+            });
+            $("#flowerTypeChooser").change(function () {
+                if (this.value == "Rose") {
+                    $("#flowerChoice").text("Rose");
+                }
+                if (this.value == "Lily") {
+                    $("#flowerChoice").text("Lily");
+                }
+                if (this.value == "Carnation") {
                     $("#flowerChoice").text("Carnation");
-               }
-                if (this.value == "Gerbera"){
+                }
+                if (this.value == "Gerbera") {
                     $("#flowerChoice").text("Gerbera");
                 }
-                if (this.value == "Sunflower"){
+                if (this.value == "Sunflower") {
                     $("#flowerChoice").text("Sunflower");
                 }
-        });
+            });
         });
     </script>
 </html>

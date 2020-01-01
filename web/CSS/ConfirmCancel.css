@@ -1,9 +1,9 @@
 body{
     text-align: center;
-    color: darkslateblue;
+    color: #660066;
 }
 h2{
-    color: darkslateblue;
+    color: #660066;
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 30px;
@@ -11,7 +11,7 @@ h2{
 }
 
 .backBt{
-    background-color:  darkslateblue;
+    background-color:  #660066;
     color: white;
     padding: 5px;
     border-radius: 15px;
@@ -24,7 +24,9 @@ h2{
     margin-top: 50px;
     font-weight: bold;
     display: inline-block;
-    box-shadow: 0px 0px 10px  0px darkslateblue;
+    box-shadow: 0px 0px 10px  0px #660066;
+    position: relative;
+    z-index: 1;
 }
 
 h5{

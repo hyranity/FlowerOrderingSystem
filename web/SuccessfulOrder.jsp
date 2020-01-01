@@ -1,6 +1,6 @@
 <%-- 
-    Document   : ConfirmCancel
-    Created on : Jan 1, 2020, 11:38:04 AM
+    Document   : SuccessfulOrder
+    Created on : Jan 1, 2020, 8:01:19 PM
     Author     : mast3
 --%>
 
@@ -15,7 +15,7 @@
         <link href="CSS/ConfirmCancel.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Order successful</title>
     </head>
     <body>
         <!-- HEADER -->
@@ -32,26 +32,18 @@
                 </div>
             </div>
         </header>
-        <h2>Order cancelled.</h2>
-        <h3>Your order of "Love Bouquet" has been successfully cancelled.</h3>
-        <h3>You will be refunded within 2-3 business days.</h3>
-               <div class="revertBt" id="close">
-                    Revert
-                </div>
-        <div class="backBt">
+        <h2>Order successfully placed.</h2>
+        <h3>Your order of "Love Bouquet" has been successfully processed.</h3>
+        <h3>If you would like to view your order details (as well as edit, cancel, or track it), use "View my Order" and key in your Order ID.</h3>
+        <h3>Your Order ID as well as other relevant details have been emailed to you.</h3>
+        <div class="backBt" id="agreeBt">
                 I understand.
             </div>
-         <h5>If you change your mind, you can revert back. If you navigate away from this page, the cancellation is final.</h5>
-
-    </body>
+</body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            
-            $(".revertBt").click(function(){
-                window.location.href="MyOrderReverted.jsp";
-            });
-            $(".backBt").click(function(){
+            $("#agreeBt").click(function(){
                 window.location.href="Gallery.jsp";
             });
         });

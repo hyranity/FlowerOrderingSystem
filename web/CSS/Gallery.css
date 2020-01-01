@@ -1,5 +1,5 @@
 body{
-    background-color: darkslateblue;
+    background-color: #660066;
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -15,7 +15,7 @@ h1{
 .gallery{
     background-color: white;
     padding: 10px;
-    color: darkslateblue;
+    color: #660066;
     
 }
 
@@ -35,7 +35,7 @@ table .cell{
 }
 
 table .cell:hover .info{
-    border-color: darkslateblue;
+    border-color: #660066;
     border-width: 10px;
     background-color: blueviolet;
 }
@@ -51,7 +51,7 @@ table .cell:hover{
 
 .info{
     transition: 0.2s;
-    background-color: darkslateblue;
+    background-color: #660066;
     border-radius: 30px;
     padding: 5px;
 }

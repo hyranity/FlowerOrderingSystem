@@ -3,7 +3,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .main{
-    color: darkslateblue;
+    color: #660066;
     display: inline-block;
     width: 50%;
     margin-top: 100px;
@@ -14,20 +14,20 @@ body{
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 20px darkslateblue;
+    text-shadow: 1px 1px 20px #660066;
 }
 
 form{
-    background-color: darkslateblue;
+    background-color: #660066;
     color: white;
     padding: 40px;
     margin: 0;
     text-align: left;
-    box-shadow: 0px 0px 15px  2px darkslateblue;
+    box-shadow: 0px 0px 15px  2px #660066;
 }
 
 form input[type=text]{
-    background-color: darkslateblue;
+    background-color: #660066;
     color: white;
     border-top-width: 0;
     border-right-width: 0;
@@ -36,6 +36,8 @@ form input[type=text]{
     font-size: 20px;
     margin-top: 20px;
     margin-right: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 form input[type=text]::placeholder{
@@ -62,7 +64,7 @@ form h5{
 }
 
 .payBt{
-    background-color: darkslateblue;
+    background-color: #660066;
     color: white;
     padding: 10px;
     border-radius: 15px;
@@ -73,7 +75,7 @@ form h5{
     margin-left: 0;
     font-weight: bold;
     display: inline-block;
-    box-shadow: 0px 0px 10px  2px darkslateblue;
+    box-shadow: 0px 0px 10px  2px #660066;
 }
 
 .backBt{

@@ -33,14 +33,15 @@
             </div>
         </header>
         <h2>Edit my order</h2>
+        <form action="MyOrder.jsp">
         <div class='main'>
             <h3>Edit card message</h3>
             <br/>
-            <input placeholder="To" type="text">
+            <input placeholder="To" type="text" value="Jesse McCree" required>
             <br/>
-            <input placeholder="From" type="text">
+            <input placeholder="From" type="text" value="Ashe" required>
             <br/>
-            <input placeholder="Card message" type="text">
+            <input placeholder="Card message" type="text" value="I love you" required>
             <br/>
             <div class="section">
                 <h3>Wrapping color</h3>
@@ -55,6 +56,8 @@
                 </select>
             </div>
         </div>
+            <button type="submit" style="display: none" id="submitForm"></button>
+        </form>
         <br/>
         <br/>
         <div class="cancelBt" id="cancel">
@@ -72,7 +75,7 @@
             });
             
             $("#confirm").click(function () {
-               window.location.href="MyOrder.jsp";
+                $("#submitForm").trigger("click");  
             });
         });
     </script>

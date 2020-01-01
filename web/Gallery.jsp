@@ -19,27 +19,20 @@
     <body>
         <!-- HEADER -->
         <header>
-            <div class="cart">
-                my orders <span class="badge badge-danger">
-                    <%
-                        // Just to display cart quantity
-                        Integer quantity = (Integer) session.getAttribute("cartQuantity");
-                        if (quantity == null) {
-                    %>
-                    0
-                    <%
-                        } else{
-                     %>
-                     <%=quantity%>
-                     <%
-                         }
-                    %>
-                </span>
+            <div class="siteName">
+                glory florist
+            </div>
+            <div class="others">
+                <div>
+                    Gallery
+                </div>
+                <a href="GetOrder.jsp"><div>
+                    View my Order
+                </div></a>
             </div>
         </header>
-        <h1>Our Gallery</h1>
-        <div class="gallery">
-            <h1>Bouquets</h1>
+        <div class="gallery" style="z-index:1;position: relative;">
+            <h1>Gallery</h1>
             <table>
                 <tr>
                     <td class="cell" id="first">

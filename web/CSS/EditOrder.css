@@ -1,5 +1,5 @@
 body{
-    background-color: darkslateblue;
+    background-color: #660066;
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,17 +8,17 @@ body{
 }
 
 .main{
-    color: darkslateblue;
+    color: #660066;
     display: inline-block;
     width: 50%;
     margin-top: 100px;
     text-align: center;
-    background-color: darkslateblue;
+    background-color: #660066;
     color: white;
     padding: 40px;
     margin: 0;
     text-align: left;
-    box-shadow: 0px 0px 15px  2px darkslateblue;
+    box-shadow: 0px 0px 15px  2px #660066;
     position: relative;
     z-index: 1;
 }
@@ -26,7 +26,7 @@ body{
 h2{
     text-align: center;
     font-weight: bold;
-    color: darkslateblue;
+    color: #660066;
 }
 
 input[type=text]{
@@ -59,7 +59,7 @@ h3{
 
 .section select{
     width: 120px;
-    color: darkslateblue;
+    color: #660066;
     font-size: 20px;
     font-weight: bold;
     margin-top: -20px;
@@ -87,7 +87,7 @@ h3{
 
 .confirmBt{
     
-    background-color:  darkslateblue;
+    background-color:  #660066;
     color: white;
     padding: 5px;
     border-radius: 15px;
@@ -100,7 +100,7 @@ h3{
     margin-top: 10px;
     font-weight: bold;
     display: inline-block;
-    box-shadow: 0px 0px 10px  0px darkslateblue;
+    box-shadow: 0px 0px 10px  0px #660066;
     position: relative;
     z-index: 1;
 }

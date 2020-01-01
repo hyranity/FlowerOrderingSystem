@@ -33,6 +33,8 @@
             </div>
         </header>
         <h2>Here's your order.</h2>
+        <h3 style="text-align: center; display: inline-block; margin-top: -100px; margin-bottom: 50px; color: coral; text-shadow: 1px 1px 20px coral;">Cancellation has been reverted.</h3>
+        <br/>
         <div class="main">
             <h3 style="font-size: 30px; text-shadow: 1px 1px 4px white;">Flower Details</h3>
             <h4>Love Bouquet</h4>

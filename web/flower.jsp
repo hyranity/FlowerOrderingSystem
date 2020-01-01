@@ -48,7 +48,7 @@
 
                 <div class="customize">
                     <h2>Personalize your order.</h2>
-                    <form id="customizerForm">
+                    <form id="customizerForm" action="Payment.jsp">
                         <p class="flowerNo">6</p> <p id="stalkText">stalks</p>
                         <input class="slider" type="range" min="1" max="12" value="6"/>
                         <div class="section">
@@ -77,11 +77,11 @@
                         <br/>
                         <br/>
                         <br/>
-                        <input placeholder="To" type="text">
+                        <input placeholder="To" type="text" class="textBox" required>
                         <br/>
-                        <input placeholder="From" type="text">
+                        <input placeholder="From" type="text"  class="textBox" required>
                         <br/>
-                        <input placeholder="Card message" type="text">
+                        <input placeholder="Card message" type="text"  class="textBox" required>
                         <br/>
                         <h3 style="margin-bottom: -10px;">How do you want to get your flower?</h3>
                         <br/>
@@ -90,34 +90,67 @@
                         <br/>
                         <h3 style="margin-bottom: -10px;">When do you want to get it?</h3>
                         <br/>
-                        <input id='date' placeholder="(e.g. 25/12/2020)" type="text">
+                        <input id='date' placeholder="(e.g. 25/12/2020)" type="text"  class="textBox" required>
                         <br/>
-                        <p id='dateError' style='color: red;'></p>
+                        <p id='errorMessage' style='color: red;'></p>
                         <br/>
                         <div class="buttonDiv" id="choice" >
                             <h3>Buy </h3><p id="flowerChoice"></p>, <p id="wrapChoice"></p> </div>
+                            <button type="submit" style="display: none" id="submitForm"></button>
+                            </form>
                 </div>
-                </form>
+                
             </div>
         </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
+
         $(document).ready(function () {
 
+            function disableButton() {
+                $(".buttonDiv").css("pointer-events", "none");
+                $(".buttonDiv").css("opacity", "0.5");
+            }
+
+            function enableButton() {
+                $("#errorMessage").text("");
+                $(".buttonDiv").css("pointer-events", "auto");
+                $(".buttonDiv").css("opacity", "1");
+            }
             // validate via REGEX
             $("#date").keyup(function (e) {
                 var string = this.value;
                 var regex = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
                 // REGEX thanks to ic3b3rg @ https://stackoverflow.com/questions/16462297/regex-for-date-validation-in-javascript
-                if (!string.match(regex)){
-                        $("#dateError").text("Ensure that your date is in dd/MM/yyyy format.");
+                if (!string.match(regex)) {
+                    $("#errorMessage").text("Ensure that your date is in dd/MM/yyyy format.");
                     $(".buttonDiv").css("pointer-events", "none");
                     $(".buttonDiv").css("opacity", "0.5");
                 } else {
-                    $("#dateError").text("");
+                    // Format is correct
+                    $("#errorMessage").text("");
                     $(".buttonDiv").css("pointer-events", "auto");
                     $(".buttonDiv").css("opacity", "1");
+
+                    var today = new Date();
+                    // Code thanks to Y. Kurmangaliyev @ https://stackoverflow.com/questions/33299687/how-to-convert-dd-mm-yyyy-string-into-javascript-date-object
+                    var dateSections = string.split("/");
+                    var expectedDate = new Date(+dateSections[2], dateSections[1] - 1, +dateSections[0]);
+
+                    // Compare dates
+                    if (expectedDate > today) {
+                        // Is correct
+                        $("#errorMessage").text("");
+                        $(".buttonDiv").css("pointer-events", "auto");
+                        $(".buttonDiv").css("opacity", "1");
+                    } else {
+                        // Is incorrect
+                        $("#errorMessage").text("Orders must be made ONE DAY before intended day.");
+                        $(".buttonDiv").css("pointer-events", "none");
+                        $(".buttonDiv").css("opacity", "0.5");
+                    }
+
                 }
 
             }
@@ -189,6 +222,10 @@
                     $("#flowerChoice").text("Sunflower");
                 }
             });
+
+            $(".buttonDiv").click(function () {
+        $("#submitForm").trigger("click");        
+    });
         });
     </script>
 </html>

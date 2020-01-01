@@ -35,11 +35,17 @@
         
         <div class="main">
             <h2>Complete your payment.</h2>
-            <form>
+            <form action="SuccessfulOrder.jsp">
                 <h3>Credit Card Info</h3>
-                <input type="text" placeholder="Credit card no.">
-                <input type="text" placeholder="Expiry date">
-                <input type="text" placeholder="Security number">
+                <input type="text" placeholder="Credit card no." required>
+                <input type="text" placeholder="Expiry date" required>
+                <input type="text" placeholder="Security number" required>
+                <br/>
+                <br/>
+                <h3>Customer info</h3>
+                <input type="text" placeholder="Full name" required>
+                <input type="text" placeholder="Contact no." required>
+                <input type="text" placeholder="Email" required>
                 <br/>
                 <br/>
                 <h3>Summary</h3>
@@ -56,6 +62,7 @@
                 <h5 style="float: right;">RM120</h5>
                 <br/>
                 <h4>Total: RM364</h4>
+                <button type="submit" style="display:none;" class="submitBt"></button>
             </form>
             <div class="backBt">
                 back
@@ -64,4 +71,15 @@
                 purchase
             </div>
         </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".backBt").click(function(){
+                window.location.href="flower.jsp";
+            });
+            $(".payBt").click(function(){
+                $(".submitBt").trigger("click");       
+            });
+        });
+    </script>
 </html>

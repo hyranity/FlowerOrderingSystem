@@ -22,7 +22,7 @@ h1{
 .image{
     display: inline-block;
     margin-top: 300px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .infoArea{
@@ -209,6 +209,7 @@ input[type="radio"]+label{
     padding: 10px;
     opacity: 0.3;
     transition: 0.2s;
+    
 } 
 
 input[type="radio"] {

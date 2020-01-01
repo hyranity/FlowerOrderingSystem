@@ -86,7 +86,13 @@
                         <h3 style="margin-bottom: -10px;">How do you want to get your flower?</h3>
                         <br/>
                         <input type="radio" name="collectionChoice" id="walkin" checked> <label for="walkin">I'll collect it</label>
-                       <input type="radio" name="collectionChoice" id="delivery" > <label for="delivery">Deliver it</label>
+                        <input type="radio" name="collectionChoice" id="delivery" > <label for="delivery">Deliver it</label>
+                        <br/>
+                        <h3 style="margin-bottom: -10px;">When do you want to get it?</h3>
+                        <br/>
+                        <input id='date' placeholder="(e.g. 25/12/2020)" type="text">
+                        <br/>
+                        <p id='dateError' style='color: red;'></p>
                         <br/>
                         <div class="buttonDiv" id="choice" >
                             <h3>Buy </h3><p id="flowerChoice"></p>, <p id="wrapChoice"></p> </div>
@@ -98,6 +104,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+
+            // validate via REGEX
+            $("#date").keyup(function (e) {
+                var string = this.value;
+                var regex = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+                // REGEX thanks to ic3b3rg @ https://stackoverflow.com/questions/16462297/regex-for-date-validation-in-javascript
+                if (!string.match(regex)){
+                        $("#dateError").text("Ensure that your date is in dd/MM/yyyy format.");
+                    $(".buttonDiv").css("pointer-events", "none");
+                    $(".buttonDiv").css("opacity", "0.5");
+                } else {
+                    $("#dateError").text("");
+                    $(".buttonDiv").css("pointer-events", "auto");
+                    $(".buttonDiv").css("opacity", "1");
+                }
+
+            }
+            );
+
             // Set default button value
             $("#flowerChoice").text("Rose");
             $(".buttonDiv").css("background-color", "white");

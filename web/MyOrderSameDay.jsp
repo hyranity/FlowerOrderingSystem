@@ -69,12 +69,16 @@
             <div class="attemptEdit">
                 Edit order
             </div>
-            <div class="trackBt">
+            <div class="trackBt" id="track">
                 Track order
             </div>
 
             <div class="attemptCancel" id="cancel">
                 Cancel order
+            </div>
+            
+            <div class="statusBt" id="confirmOrder">
+                Confirm order
             </div>
         </div>
         <div class="overlay">
@@ -86,10 +90,27 @@
                 </div>
             </div>
         </div>
+        <div class="overlay2">
+            <div class="confirm">
+                <h3>Are you sure? Once you click confirm</h3>
+                <p>Your payment will be send to the seller. Hence, your item has received</p>
+                <p style="color: red;">No refund</p>
+                <div class="trackBt" id="close2">
+                    Back
+                </div>
+                <div class="statusBt" id="confirmStatus">
+                    Confirm
+                </div>
+            </div>
+        </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+            $("#track").click(function () {
+                window.location.href="itemTrackSameDay.jsp";
+            });
+            
             $(".attemptEdit").click(function () {
                 $(".overlay").css("display", "block");
                 $("#errorMsg").text("You can't edit your order.");
@@ -102,6 +123,18 @@
             
             $("#close").click(function () {
                 $(".overlay").css("display", "none");
+            });
+            
+            $("#close2").click(function () {
+                $(".overlay2").css("display", "none");
+            });
+            
+            $("#confirmOrder").click(function () {
+                $(".overlay2").css("display", "block");
+            });
+            
+             $("#confirmStatus").click(function(){
+                window.location.href="ConfirmItem.jsp";
             });
         });
     </script>

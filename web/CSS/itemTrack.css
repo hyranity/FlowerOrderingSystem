@@ -1,0 +1,78 @@
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    color: #660066;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 20px #660066;
+    margin-top: 100px;
+}
+.main{
+    color: #660066;
+    display: inline-block;
+    width: 70%;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #660066;
+    color: white;
+    padding: 40px;
+    margin: 0;
+    text-align: left;
+    box-shadow: 0px 0px 15px  2px #660066;
+}
+
+.main h2{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 20px #660066;
+    
+}
+
+h3{
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h4{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 23px;
+    display: inline-block;
+}
+
+.backBt{
+    background-color:  #660066;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    margin-left: 0;
+    margin-top: 50px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0px 0px 10px  0px #660066;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.btContainer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.parcel h4{
+    font-weight: 400;
+}
+
+

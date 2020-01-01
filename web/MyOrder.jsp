@@ -69,12 +69,16 @@
             <div class="editBt">
                 Edit order
             </div>
-            <div class="trackBt">
+            <div class="trackBt" id="track">
                 Track order
             </div>
 
             <div class="cancelBt" id="cancel">
                 Cancel order
+            </div>
+            
+            <div class="statusBt" id="confirmOrder">
+                Confirm order
             </div>
         </div>
         <div class="overlay">
@@ -89,10 +93,26 @@
                 </div>
             </div>
         </div>
+        <div class="overlay2">
+            <div class="confirm">
+                <h3>Once you click confirm</h3>
+                <p>Your payment will be send to the seller. Hence, your item has received</p>
+                <div class="trackBt" id="close2">
+                    Cancel
+                </div>
+                <div class="statusBt" id="confirmStatus">
+                    Confirm
+                </div>
+            </div>
+        </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+            $("#track").click(function () {
+                window.location.href="itemTrack.jsp";
+            });
+            
             $("#cancel").click(function () {
                 $(".overlay").css("display", "block");
             });
@@ -101,12 +121,24 @@
                 $(".overlay").css("display", "none");
             });
             
+            $("#close2").click(function () {
+                $(".overlay2").css("display", "none");
+            });
+            
+            $("#confirmOrder").click(function () {
+                $(".overlay2").css("display", "block");
+            });
+            
             $(".editBt").click(function () {
                  window.location.href="EditOrder.jsp";
             });
             
             $("#confirmCancel").click(function(){
                 window.location.href="ConfirmCancel.jsp";
+            });
+            
+            $("#confirmStatus").click(function(){
+                window.location.href="ConfirmItem.jsp";
             });
         });
     </script>

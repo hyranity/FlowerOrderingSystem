@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    color: darkslateblue;
+}
+h2{
+    color: darkslateblue;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.backBt{
+    background-color:  darkslateblue;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    margin-left: 0;
+    margin-top: 50px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0px 0px 10px  0px darkslateblue;
+}
+
+h5{
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.revertBt{
+    background-color:  coral;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    margin-left: 0;
+    margin-top: 50px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0px 0px 10px  0px coral;
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+}
+h2{
+    color: darkslateblue;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+input[type=text]{
+    transition: 0.2s;
+    position: relative;
+    color: darkslateblue;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 3px;
+    border-bottom-color: darkslateblue;
+    font-size: 20px;
+    z-index: 1;
+    text-align: center;
+    width: 200px;
+}
+
+input[type=text]::placeholder{
+    color: darkslateblue;
+    opacity: 0.6;
+}
+
+input[type=text]:focus{
+    outline: none;
+    width: 300px;
+}
+
+input[type=text]:hover{
+    width: 300px;
+}
+
+h3{
+    color: crimson;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.findBt{
+    background-color:  darkslateblue;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0px 0px 10px  0px darkslateblue;
+    position: relative;
+    z-index: 1;
+}

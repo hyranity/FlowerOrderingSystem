@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .badge-danger{
@@ -37,6 +38,7 @@ header div div:hover{
     text-align: center;
     display: inline-block;
     position: absolute;
+    z-index: 0;
     left: 0;
     right: 0;
     top: 0;

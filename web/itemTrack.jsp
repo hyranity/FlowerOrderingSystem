@@ -38,25 +38,25 @@
                 <h3 style="display: inline-block; font-size: 30px;  text-shadow: 1px 1px 4px white;">Location</h3>
                 <h3 style="display: inline-block; font-size: 30px;  text-shadow: 1px 1px 4px white; float: right;">Status</h3>
                 <br/> 
-                <h3 style="display: inline-block; color: #00FF00;">Caw. Serahan Gombak</h3>
-                <h3 style="display: inline-block; float: right; color: #00FF00;">Item out for delivery</h3>
-                <p style="font-size: 16px">15-12-2019 12:13</p>
+                <h3 style="display: inline-block; color: #00FF00;">Lido four season</h3>
+                <h3 style="display: inline-block; float: right; color: #00FF00;">Item delivered</h3>
+                <p style="font-size: 16px">20-1-2020 10:30</p>
                 <hr/>
-                <h3 style="display: inline-block;">Pos laju Wangsa Maju</h3>
-                <h3 style="display: inline-block; float: right;">Arrive at delivery facility</h3>
-                <p style="font-size: 16px">15-12-2019 5:44</p>
+                <h3 style="display: inline-block;">Jalan Lintas</h3>
+                <h3 style="display: inline-block; float: right;">Item out for delivery</h3>
+                <p style="font-size: 16px">20-1-2020 10:00</p>
                 <hr/>
-                <h3 style="display: inline-block;">Pos laju Parcel hub</h3>
-                <h3 style="display: inline-block; float: right;">Consignment dispatch out from Transit Office</h3>
-                <p style="font-size: 16px">14-12-2019 23:58</p>
+                <h3 style="display: inline-block;">Damai point</h3>
+                <h3 style="display: inline-block; float: right;">Item dispatched out</h3>
+                <p style="font-size: 16px">20-1-2020 9:43</p>
                 <hr/>
-                <h3 style="display: inline-block;">Pos laju Parcel hub</h3>
+                <h3 style="display: inline-block;">Glory Florist</h3>
                 <h3 style="display: inline-block; float: right;">Item processed</h3>
-                <p style="font-size: 16px">14-12-2019 20:33</p>
+                <p style="font-size: 16px">20-1-2020 9:33</p>
                 <hr/>
-                <h3 style="display: inline-block;">Pos laju Kuala Lumpur</h3>
+                <h3 style="display: inline-block;">Glory Florist</h3>
                 <h3 style="display: inline-block; float: right;">Item picked up</h3>
-                <p style="font-size: 16px">14-12-2019 8:33</p>
+                <p style="font-size: 16px">20-1-2020 8:33</p>
             </div>
         </div>
         <div class="btContainer">

@@ -54,7 +54,7 @@
             <br/>
             <hr/>
             <h3 style="font-size: 30px;  text-shadow: 1px 1px 4px white;">Delivery Details</h3>
-            <h4>Delivering to:</h4> <h3 style="margin-top: -6px; color: coral;">Prima Setapak, 53300 KL</h3>
+            <h4>Delivering to:</h4> <h3 style="margin-top: -6px; color: coral;">Lido four season B-12-11, 88200 Kota Kinabalu, Sabah</h3>
             <h4>on</h4><h3 style="display: inline-block; margin-left: 10px;">January 20, 2020</h3>
             <hr/>
             <div class="cardMsg">

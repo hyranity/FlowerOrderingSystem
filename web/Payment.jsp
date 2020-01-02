@@ -48,6 +48,13 @@
                 <input type="text" placeholder="Email" required>
                 <br/>
                 <br/>
+                <h3>Delivery address</h3>
+                <input type="text" placeholder="Building, Street, and etc.."required>
+                <input type="text" placeholder="Postal Code" required> 
+                <input type="text" placeholder="State" required> 
+                <input type="text" placeholder="Area" required>  
+                <br/>
+                <br/>
                 <h3>Summary</h3>
                 <h4>Love Bouquet</h4>
                 <h4 style="float: right;">RM100</h4>

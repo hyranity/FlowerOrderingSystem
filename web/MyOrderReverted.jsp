@@ -37,8 +37,10 @@
         <br/>
         <div class="main">
             <h3 style="font-size: 30px; text-shadow: 1px 1px 4px white;">Flower Details</h3>
-            <h4>Love Bouquet</h4>
-            <h4 style="float: right;">RM100</h4>
+             <h4>Love Bouquet</h4>
+            <br/>
+            <h5>Love Bouquet design arrangement</h5>
+            <h5 style="float: right;">RM100</h5>
             <br/>
             <h5>Rose, 12 stalks</h5>
             <h5 style="float: right;">RM12 x 12</h5>

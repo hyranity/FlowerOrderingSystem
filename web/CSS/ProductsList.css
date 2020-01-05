@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Josefin+Sans&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  color: #33334d;
+  font-family: Josefin Sans;
+  text-decoration: none;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#list .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#list .row .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff3ff;
+  padding: 50px;
+  margin: 15px;
+  transition: background-color 0.3s;
+}
+#list .row .card #details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#list .row .card #details #left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#list .row .card #details #left img {
+  width: 75px;
+}
+#list .row .card #details #left #button {
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#list .row .card #details #left img:hover + #button {
+  opacity: 1;
+}
+#list .row .card #details #left #button:hover {
+  opacity: 1;
+}
+#list .row .card #details #right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 15px;
+}
+#list .row .card #details #right #code {
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 1;
+}
+#list .row .card #details #right #backdrop {
+  font-size: 45px;
+  opacity: 0.1;
+  margin-top: -22px;
+  margin-left: 1px;
+  z-index: 0;
+  position: absolute;
+}
+#list .row .card #details #right .detail {
+  z-index: 1;
+  background: transparent;
+  border: none;
+  font-family: Josefin Sans;
+  width: 100px;
+  color: #33334d;
+}
+#list .row .card #details #right .detail:focus {
+  outline: none;
+}
+#list .row .card #details #right #name {
+  font-size: 25px;
+}
+#list .row .card #details #right #price {
+  font-size: 20px;
+}
+#list .row .card #buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+#list .row .card #buttons .save {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #33334d;
+  color: #fff3ff;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+#list .row .card #buttons .save:hover {
+  background-color: #fff3ff;
+  color: #33334d;
+}
+#list .row .card #buttons .save:focus {
+  outline: none;
+}
+#list .row .card #buttons .remove {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 51, 51, 0.6);
+  color: white;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+#list .row .card #buttons .remove:hover {
+  background-color: rgba(255, 51, 51, 0.05);
+  color: rgba(255, 51, 51, 0.6);
+}
+#list .row .card #buttons .remove:focus {
+  outline: none;
+}
+#list .row .card:hover {
+  background-color: white;
+}

@@ -32,7 +32,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-#list .row .card {
+#list .row .card { z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,22 +42,22 @@ a {
   margin: 15px;
   transition: background-color 0.3s;
 }
-#list .row .card #details {
+#list .row .card #details { z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-#list .row .card #details #left {
+#list .row .card #details #left { z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#list .row .card #details #left img {
+#list .row .card #details #left img { z-index: 1;
   width: 75px;
 }
-#list .row .card #details #left #button {
+#list .row .card #details #left #button { z-index: 1;
   font-weight: bold;
   font-size: 30px;
   position: absolute;
@@ -70,19 +70,19 @@ a {
 #list .row .card #details #left #button:hover {
   opacity: 1;
 }
-#list .row .card #details #right {
+#list .row .card #details #right { z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   margin-left: 15px;
 }
-#list .row .card #details #right #code {
+#list .row .card #details #right #code { z-index: 1;
   font-size: 35px;
   font-weight: bold;
   z-index: 1;
 }
-#list .row .card #details #right #backdrop {
+#list .row .card #details #right #backdrop { z-index: 1;
   font-size: 45px;
   opacity: 0.1;
   margin-top: -22px;
@@ -90,7 +90,7 @@ a {
   z-index: 0;
   position: absolute;
 }
-#list .row .card #details #right .detail {
+#list .row .card #details #right .detail { z-index: 1;
   z-index: 1;
   background: transparent;
   border: none;
@@ -101,10 +101,10 @@ a {
 #list .row .card #details #right .detail:focus {
   outline: none;
 }
-#list .row .card #details #right #name {
+#list .row .card #details #right #name { z-index: 1;
   font-size: 25px;
 }
-#list .row .card #details #right #price {
+#list .row .card #details #right #price { z-index: 1;
   font-size: 20px;
 }
 #list .row .card #buttons {
@@ -114,7 +114,7 @@ a {
   justify-content: center;
   margin-top: 15px;
 }
-#list .row .card #buttons .save {
+#list .row .card #buttons .save { z-index: 1;
   font-family: Josefin Sans;
   font-size: 20px;
   font-weight: bold;
@@ -135,7 +135,7 @@ a {
 #list .row .card #buttons .save:focus {
   outline: none;
 }
-#list .row .card #buttons .remove {
+#list .row .card #buttons .remove { z-index: 1;
   font-family: Josefin Sans;
   font-size: 20px;
   font-weight: bold;

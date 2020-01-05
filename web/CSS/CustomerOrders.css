@@ -32,7 +32,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-#list .row .card {
+#list .row .card { z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,27 +42,27 @@ a {
   margin: 15px;
   transition: background-color 0.3s;
 }
-#list .row .card #details {
+#list .row .card #details { z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
-#list .row .card #details #code {
+#list .row .card #details #code { z-index: 1;
   font-size: 35px;
   font-weight: bold;
   z-index: 1;
 }
-#list .row .card #details #name {
+#list .row .card #details #name { z-index: 1;
   font-size: 25px;
   z-index: 1;
 }
-#list .row .card #details #date {
+#list .row .card #details #date { z-index: 1;
   font-size: 18px;
   z-index: 1;
   margin-top: 2px;
 }
-#list .row .card #details #backdrop {
+#list .row .card #details #backdrop { z-index: 1;
   font-size: 45px;
   opacity: 0.1;
   margin-top: -15px;
@@ -70,53 +70,53 @@ a {
   z-index: 0;
   position: absolute;
 }
-#list .row .card #items {
+#list .row .card #items { z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 25px;
 }
-#list .row .card #items #item {
+#list .row .card #items #item { z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-#list .row .card #items #item img {
+#list .row .card #items #item img { z-index: 1;
   width: 50px;
 }
-#list .row .card #items #item #count {
+#list .row .card #items #item #count { z-index: 1;
   margin-top: 40px;
   margin-left: -10px;
   font-weight: bold;
   font-size: 30px;
 }
-#list .row .card #items #item #name {
+#list .row .card #items #item #name { z-index: 1;
   font-size: 18px;
   margin-left: 10px;
   margin-top: 5px;
   width: 120px;
 }
-#list .row .card #items #item #name b {
+#list .row .card #items #item #name b { z-index: 1;
   font-size: 20px;
 }
-#list .row .card #payment {
+#list .row .card #payment { z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 25px;
 }
-#list .row .card #payment .option {
+#list .row .card #payment .option { z-index: 1;
   font-family: Josefin Sans;
   font-size: 17px;
   padding: 10px;
   transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
-#list .row .card #payment input[type='radio'] {
+#list .row .card #payment input[type='radio'] { z-index: 1;
   height: 0px;
-  width: 0px;
+  width: 0px; 
 }
 #list .row .card #payment [id^=paid] + .option {
   border: 1px solid rgba(0, 153, 51, 0.6);
@@ -142,7 +142,7 @@ a {
   background-color: rgba(255, 51, 51, 0.6);
   border: 1px solid rgba(240, 240, 245, 0.3);
 }
-#list .row .card #payment .save {
+#list .row .card #payment .save { z-index: 1;
   font-family: Josefin Sans;
   font-size: 20px;
   font-weight: bold;

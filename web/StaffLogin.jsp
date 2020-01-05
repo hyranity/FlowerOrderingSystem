@@ -34,7 +34,7 @@
           <div id='content'>
 
             <div id='top'>
-              <a href='#' id='back'>Back</a>
+              <a href='Login.jsp' id='back'>Back</a>
             </div>
 
             <div id='form'>
@@ -45,7 +45,7 @@
             </div>
 
             <div id='bottom'>
-              <a href='#' id='login'>Login</a>
+              <a href='StaffDashboard.jsp' id='login'>Login</a>
             </div>
 
           </div>

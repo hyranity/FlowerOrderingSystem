@@ -33,7 +33,7 @@ a {
   width: 100%;
   margin-bottom: 10px;
 }
-#main #content #top #back {
+#main #content #top #back { z-index: 1;
   background-color: #a4a4c1;
   color: #f0f0f5;
   font-family: Josefin Sans;

@@ -33,19 +33,20 @@
             </div>
         </header>
         
-        <div class="main">
+        <div class="main" style="z-index: 1; position: relative;">
             <h2>Complete your payment.</h2>
+            <h4 style="margin-top: -15px; margin-bottom: 40px; font-weight: bold;">Hover over each field for more info</h4>
             <form action="SuccessfulOrder.jsp">
                 <h3>Credit Card Info</h3>
-                <input type="text" placeholder="Credit card no." required>
-                <input type="text" placeholder="Expiry date" required>
-                <input type="text" placeholder="Security number" required>
+                <input data-toggle="tooltip" data-placement="bottom" title="Number on your credit card" type="text" placeholder="Credit card no." required>
+                <input data-toggle="tooltip" data-placement="bottom" title="The date on which your credit card expires (in month/year format)" type="text" placeholder="Expiry date" required>
+                <input data-toggle="tooltip" data-placement="bottom" title="Digits found behind your card." type="text" placeholder="Security number" required>
                 <br/>
                 <br/>
                 <h3>Customer info</h3>
-                <input type="text" placeholder="Full name" required>
-                <input type="text" placeholder="Contact no." required>
-                <input type="text" placeholder="Email" required>
+                <input type="text" data-toggle="tooltip" data-placement="bottom" title="Your full name." placeholder="Full name" required>
+                <input type="text" placeholder="Contact no." data-toggle="tooltip" data-placement="bottom" title="Your telephone number (include country code if your number is not Malaysian)" required>
+                <input type="text" placeholder="Email" data-toggle="tooltip" data-placement="bottom" title="Your email address" required>
                 <br/>
                 <br/>
                 <h3>Delivery address</h3>
@@ -56,31 +57,36 @@
                 <br/>
                 <br/>
                 <h3>Summary</h3>
-                <h4>Love Bouquet</h4>
-                <h4 style="float: right;">RM100</h4>
+                <h4 data-toggle="tooltip" data-placement="bottom" title="This is the arrangement itself.">Love Bouquet</h4>
+                <h4 data-toggle="tooltip" data-placement="bottom" title="This is the arrangement cost itself." style="float: right;">RM100</h4>
                 <br/>
-                <h5>Rose, 12 stalks</h5>
-                <h5 style="float: right;">RM12 x 12</h5>
+                <h5 data-toggle="tooltip" data-placement="bottom" title="This shows how many stalks you ordered and what type of flowers are they.">Rose, 12 stalks</h5>
+                <h5 data-toggle="tooltip" data-placement="bottom" title="This shows how stalks you ordered and what type of flowers are they." style="float: right;">RM12 x 12</h5>
                 <br/>
-                <h5>Blue wrapping</h5>
-                <h5 style="float: right;">RM0</h5>
+                <h5 data-toggle="tooltip" data-placement="bottom" title="This shows the wrapping color you've chosen">Blue wrapping</h5>
+                <h5 data-toggle="tooltip" data-placement="bottom" title="There's no cost for this because it's just the color option. The cost of the wrapping itself is included in the arrangement cost." style="float: right;">RM0</h5>
                 <br/>
-                <h5>Delivery charges</h5>
-                <h5 style="float: right;">RM120</h5>
+                <h5 data-toggle="tooltip" data-placement="bottom" title="These are the delivery fees.">Delivery charges</h5>
+                <h5 data-toggle="tooltip" data-placement="bottom" title="These are the delivery fees." style="float: right;">RM120</h5>
                 <br/>
-                <h4>Total: RM364</h4>
+                <h4 data-toggle="tooltip" data-placement="bottom" title="This is the total cost.">Total: RM364</h4>
                 <button type="submit" style="display:none;" class="submitBt"></button>
             </form>
-            <div class="backBt">
+            <div class="backBt" data-toggle="tooltip" data-placement="bottom">
                 back
             </div>
-            <div class="payBt">
+            <div class="payBt" data-toggle="tooltip" data-placement="bottom">
                 purchase
             </div>
         </div>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+            
+            $(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+            
             $(".backBt").click(function(){
                 window.location.href="flower.jsp";
             });
@@ -88,5 +94,7 @@
                 $(".submitBt").trigger("click");       
             });
         });
+        
+        
     </script>
 </html>

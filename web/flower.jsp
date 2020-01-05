@@ -42,16 +42,18 @@
                     <h3>Love Bouquet</h3>
                     <p class="description">This is the best gift for your loved one, whenever the occasion!</p>
                     <br/>
-                    <p class="price">RM72</p>
-                    <p class="indivprice">(RM12 per stalk)</p>
+                    <br/>
+                    <p class="price" id='priceLbl'>RM100</p>
+                    <p class="indivprice">(Additional RM12 per stalk)</p>
                 </div>
 
                 <div class="customize">
-                    <h2>Personalize your order.</h2>
+                    <h2 style='font-size: 35px; text-shadow: 1px 1px 20px #660066;'>Personalize your order.</h2>
+                    <h4 style="margin-top: 10px; margin-bottom: 40px; font-weight: bold; color: #660066">Hover over each field for more info</h4>
                     <form id="customizerForm" action="Payment.jsp">
                         <p class="flowerNo">6</p> <p id="stalkText">stalks</p>
-                        <input class="slider" type="range" min="1" max="12" value="6"/>
-                        <div class="section">
+                        <input data-toggle="tooltip" data-placement="bottom" title="Drag to adjust the number of stalks you want." class="slider" type="range" min="1" max="12" value="6"/>
+                        <div class="section" data-toggle="tooltip" data-placement="bottom" title="What kind of flower you want give.">
                             <p>Flower type</p>
                             <br/>
                             <select id="flowerTypeChooser">
@@ -62,7 +64,7 @@
                                 <option>Sunflower</option>
                             </select>
                         </div>
-                        <div class="section" style="margin-left: 70px;">
+                        <div class="section" style="margin-left: 70px;" data-toggle="tooltip" data-placement="bottom" title="The color of the wrapping paper that will be used to surround the flowers.">
                             <p>Wrapping color</p>
                             <br/>
                             <select id="colorChooser">
@@ -77,20 +79,20 @@
                         <br/>
                         <br/>
                         <br/>
-                        <input placeholder="To" type="text" class="textBox" required>
+                        <input data-toggle="tooltip" data-placement="bottom" title="Give the name of the person you want to address to." placeholder="To" type="text" class="textBox" required>
                         <br/>
-                        <input placeholder="From" type="text"  class="textBox" required>
+                        <input data-toggle="tooltip" data-placement="bottom" title="Give the name of the person who the flower is given to" placeholder="From" type="text"  class="textBox" required>
                         <br/>
-                        <input placeholder="Card message" type="text"  class="textBox" required>
+                        <input data-toggle="tooltip" data-placement="bottom" title="Write a message to be written on the card so the receipient can read it." placeholder="Card message" type="text"  class="textBox" required>
                         <br/>
                         <h3 style="margin-bottom: -10px;">How do you want to get your flower?</h3>
                         <br/>
-                        <input type="radio" name="collectionChoice" id="walkin" checked> <label for="walkin">I'll collect it</label>
-                        <input type="radio" name="collectionChoice" id="delivery" > <label for="delivery">Deliver it</label>
+                        <input type="radio" name="collectionChoice" id="walkin" checked> <label for="walkin" data-toggle="tooltip" data-placement="bottom" title="You'll have to come to the florist to get your flower.">I'll collect it</label>
+                        <input type="radio" name="collectionChoice" id="delivery" > <label for="delivery" data-toggle="tooltip" data-placement="bottom" title="We'll deliver it for you. Delivery fees will be charged based on distance.">Deliver it</label>
                         <br/>
                         <h3 style="margin-bottom: -10px;">When do you want to get it?</h3>
                         <br/>
-                        <input id='date' placeholder="(e.g. 25/12/2020)" type="text"  class="textBox" required>
+                        <input data-toggle="tooltip" data-placement="bottom" title="The date of which you want to collect the flower or want it to be delivered." id='date' placeholder="(e.g. 25/12/2020)" type="text"  class="textBox" required>
                         <br/>
                         <p id='errorMessage' style='color: red;'></p>
                         <br/>
@@ -165,7 +167,6 @@
             $(".slider").change(function () {
 
                 var quantity = parseFloat(this.value) * 12;
-                $(".price").text("RM" + quantity);
                 $(".flowerNo").text(quantity / 12);
                 if (quantity / 12 == 1)
                     $("#stalkText").text("stalk");

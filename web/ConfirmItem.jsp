@@ -46,7 +46,7 @@
             <a href='Gallery.jsp' class='link'>home</a>
             <a href='Gallery.jsp' class='link'>shop</a>
             <a href='Gallery.jsp' id='title'>glory florist</a>
-            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='GetOrder.jsp' class='link'>order</a>
             <a href='Login.jsp' class='link'>account</a>
 
             <div id='background'>

@@ -20,7 +20,7 @@
     </head>
     <body>
         <!-- HEADER -->
-          <div id='header'>
+        <div id='header'>
             <a href='Gallery.jsp' class='link'>home</a>
             <a href='Gallery.jsp' class='link'>shop</a>
             <a href='Gallery.jsp' id='title'>glory florist</a>
@@ -28,16 +28,16 @@
             <a href='Login.jsp' class='link'>account</a>
 
             <div id='background'>
-              <div class='line'></div>
-              <div class='line' id='middle'></div>
-              <div class='line'></div>
+                <div class='line'></div>
+                <div class='line' id='middle'></div>
+                <div class='line'></div>
             </div>
-          </div>
+        </div>
 
-          <div id='subheader'>
+        <div id='subheader'>
             <a id='arrows'> > </a>
             <a id='page'>Product</a>
-          </div>
+        </div>
         <div class="main">
             <div class="image">
                 <img src="https://www.wenghoa.com/pub/media/catalog/product/cache/cf3f2243ef4940fd5c66f2ff035145ac/j/f/jf_fl_1143_bouquet_of_101_pink_roses.jpg"/>
@@ -101,12 +101,15 @@
                         <br/>
                         <p id='errorMessage' style='color: red;'></p>
                         <br/>
+                        <div class="backBt" data-toggle="tooltip" data-placement="bottom">
+                            back
+                        </div>
                         <div class="buttonDiv" id="choice" >
                             <h3>Buy </h3><p id="flowerChoice"></p>, <p id="wrapChoice"></p> </div>
-                            <button type="submit" style="display: none" id="submitForm"></button>
-                            </form>
+                        <button type="submit" style="display: none" id="submitForm"></button>
+                    </form>
                 </div>
-                
+
             </div>
         </div>
     </body>
@@ -230,8 +233,12 @@
             });
 
             $(".buttonDiv").click(function () {
-        $("#submitForm").trigger("click");        
-    });
+                $("#submitForm").trigger("click");
+            });
+            
+            $(".backBt").click(function(){
+                window.location.href="Gallery.jsp";
+            });
         });
     </script>
 </html>

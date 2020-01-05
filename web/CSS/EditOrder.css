@@ -85,7 +85,7 @@ h3{
     z-index: 1;
 }
 
-.confirmBt{
+.confirmBt, .submitBtn, .loginBtn{
     
     background-color:  #660066;
     color: white;

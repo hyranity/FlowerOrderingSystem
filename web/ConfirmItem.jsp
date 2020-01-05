@@ -17,6 +17,27 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
+    <style>
+        .redeemBtn{
+            background-color:  coral;
+            color: white;
+            padding: 5px;
+            border-radius: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            font-size: 25px;
+            margin: 20px;
+            margin-left: 0;
+            margin-top: 10px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0px 0px 10px  0px coral;
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
     <body>
         <!-- HEADER -->
         <header>
@@ -35,15 +56,16 @@
         <h2>Order received.</h2>
         <h3>Your payment of "Love Bouquet" has been successfully made.</h3>
         <h3>Enjoy your flower.</h3>
-            <div class="backBt">
-                Back to home
-            </div>
+        <div class="backBt">
+            Back to home
+        </div>
+        <a href="PointsRedeemed.jsp"><button class="redeemBtn">Redeem my points now!</button></a>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".backBt").click(function(){
-                window.location.href="Gallery.jsp";
+            $(".backBt").click(function () {
+                window.location.href = "Gallery.jsp";
             });
         });
     </script>

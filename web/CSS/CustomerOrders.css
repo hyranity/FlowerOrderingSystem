@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Josefin+Sans&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  color: #33334d;
+  font-family: Josefin Sans;
+  text-decoration: none;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#list .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#list .row .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff3ff;
+  padding: 50px;
+  margin: 15px;
+  transition: background-color 0.3s;
+}
+#list .row .card #details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#list .row .card #details #code {
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 1;
+}
+#list .row .card #details #name {
+  font-size: 25px;
+  z-index: 1;
+}
+#list .row .card #details #date {
+  font-size: 18px;
+  z-index: 1;
+  margin-top: 2px;
+}
+#list .row .card #details #backdrop {
+  font-size: 45px;
+  opacity: 0.1;
+  margin-top: -15px;
+  margin-left: 1px;
+  z-index: 0;
+  position: absolute;
+}
+#list .row .card #items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+#list .row .card #items #item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#list .row .card #items #item img {
+  width: 50px;
+}
+#list .row .card #items #item #count {
+  margin-top: 40px;
+  margin-left: -10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+#list .row .card #payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+#list .row .card #payment #price {
+  font-weight: bold;
+  font-size: 25px;
+}
+#list .row .card #payment #status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+#list .row .card #payment #status .option {
+  font-family: Josefin Sans;
+  font-size: 17px;
+  padding: 10px;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+#list .row .card #payment #status input {
+  height: 0px;
+  width: 0px;
+}
+#list .row .card #payment #status [id^=paid] + .option {
+  border: 1px solid rgba(0, 153, 51, 0.6);
+}
+#list .row .card #payment #status [id^=pending] + .option {
+  border: 1px solid rgba(255, 51, 51, 0.6);
+}
+#list .row .card #payment #status [id^=paid]:hover + .option {
+  color: #093;
+  border: 1px solid rgba(240, 240, 245, 0.3);
+}
+#list .row .card #payment #status [id^=paid]:checked + .option {
+  color: #f0f0f5;
+  background-color: rgba(0, 153, 51, 0.6);
+  border: 1px solid rgba(240, 240, 245, 0.3);
+}
+#list .row .card #payment #status [id^=pending]:hover + .option {
+  color: #f33;
+  border: 1px solid rgba(240, 240, 245, 0.3);
+}
+#list .row .card #payment #status [id^=pending]:checked + .option {
+  color: #f0f0f5;
+  background-color: rgba(255, 51, 51, 0.6);
+  border: 1px solid rgba(240, 240, 245, 0.3);
+}
+#list .row .card #buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+#list .row .card #buttons #save {
+  font-family: Josefin Sans;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+#list .row .card #buttons #save:hover {
+  background-color: rgba(0, 153, 51, 0.6);
+  color: #33334d;
+}
+#list .row .card #buttons #save:focus {
+  outline: none;
+}
+#list .row .card:hover {
+  background-color: white;
+}

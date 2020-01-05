@@ -12,22 +12,29 @@
         <link href="CSS/EditProfile.css" rel="stylesheet"/>
         <link href="CSS/EditOrder.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
+        <link href="CSS/All.css" rel="stylesheet"/>
+        <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <title>Profile Updated!</title>
     </head>
     <body>
-        <header>
-            <div class="top">
-                glory florist
+          <div id='header'>
+            <a href='Gallery.jsp' class='link'>home</a>
+            <a href='Gallery.jsp' class='link'>shop</a>
+            <a href='Gallery.jsp' id='title'>glory florist</a>
+            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='Login.jsp' class='link'>account</a>
+
+            <div id='background'>
+              <div class='line'></div>
+              <div class='line' id='middle'></div>
+              <div class='line'></div>
             </div>
-            <div class="others">
-                <div>
-                    Gallery
-                </div>
-                <div>
-                    View my Order
-                </div>
-            </div>
-        </header>
+          </div>
+
+          <div id='subheader'>
+            <a id='arrows'> > </a>
+            <a id='page'>Edit profile</a>
+          </div>
         <h1>Profile changes has been successfully saved!</h1><br/>
         <form action="Gallery.jsp" method="POST">
             <div class="content">

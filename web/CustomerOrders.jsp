@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="CSS/All.css" rel="stylesheet"/>
         <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <link href="CSS/CustomerOrders.css" rel="stylesheet"/>
         <title>Customer Orders</title>
@@ -11,11 +12,11 @@
         <div id='main'>
 
           <div id='header'>
-            <a href='#' class='link'>home</a>
-            <a href='#' class='link'>about</a>
-            <a href='#' id='title'>glory florist</a>
-            <a href='#' class='link'>shop</a>
-            <a href='#' class='link'>account</a>
+            <a href='Gallery.jsp' class='link'>home</a>
+            <a href='Gallery.jsp' class='link'>shop</a>
+            <a href='Gallery.jsp' id='title'>glory florist</a>
+            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='Login.jsp' class='link'>account</a>
 
             <div id='background'>
               <div class='line'></div>

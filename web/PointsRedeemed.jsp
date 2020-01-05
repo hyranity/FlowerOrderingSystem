@@ -6,12 +6,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="MemberRegistration.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
-        
+        <link href="CSS/All.css" rel="stylesheet"/>
+        <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <title>Points Redeemed!</title>
     </head>
     <style>
         h1{
-            font-family: 'Roboto', sans-serif;
+            font-family: Josefin Sans, sans-serif;
             font-size: 80px;
             color: green;
             text-align: center;
@@ -54,27 +55,27 @@
 
     </style>
     <body>
-        <header> 
-                       
-            <div class="siteName">
-                glory florist
-            </div>
+          <div id='header'>
+            <a href='Gallery.jsp' class='link'>home</a>
+            <a href='Gallery.jsp' class='link'>shop</a>
+            <a href='Gallery.jsp' id='title'>glory florist</a>
+            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='Login.jsp' class='link'>account</a>
 
-            <div class="others">
-                <div>
-                    Gallery
-                </div>
-                <div>
-                    View my Order
-                </div>                
+            <div id='background'>
+              <div class='line'></div>
+              <div class='line' id='middle'></div>
+              <div class='line'></div>
             </div>
-            <div class="points" >
-                My Points: 67p
-            </div> 
-        </header>
+          </div>
+
+          <div id='subheader'>
+            <a id='arrows'> > </a>
+            <a id='page'>Points redeemed</a>
+          </div>
         <br/><br/>
         
-        <h1>39points</h1>
+        <h1>39 points</h1>
         <p><b>has been added into your account!</b></p>
         <br/>
         <p>You now have a total of 67points.</p>

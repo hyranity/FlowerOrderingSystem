@@ -12,6 +12,8 @@
         <link href="CSS/MemberRegistration.css" rel="stylesheet"/>
         <link href="CSS/EditOrder.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
+        <link href="CSS/All.css" rel="stylesheet"/>
+        <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <title>Glory Florist: Rewards</title>
     </head>
     <style>
@@ -19,7 +21,7 @@
             font-size: 20px;
             text-align: right;
             color: yellow;
-            font-family: 'Roboto', sans-serif;
+            font-family: Josefin Sans, sans-serif;
         }        
 
         h1, label{
@@ -27,18 +29,18 @@
             text-align: center;
             font-weight: bold;
             text-shadow: 2px #660066;
-            font-family: 'Roboto', sans-serif;
+            font-family: Josefin Sans, sans-serif;
         }
 
         p, h4{
             color: wheat;
-            font-family: 'Roboto', sans-serif;
+            font-family: Josefin Sans, sans-serif;
             font-size: 20px;
         }
 
         table{
             color: wheat;
-            font-family: 'Roboto', sans-serif;
+            font-family: Josefin Sans, sans-serif;
             font-size: 20px;
             text-align:center;
         }
@@ -95,24 +97,24 @@
 
     </style>
     <body>
-        <header> 
+          <div id='header'>
+            <a href='Gallery.jsp' class='link'>home</a>
+            <a href='Gallery.jsp' class='link'>shop</a>
+            <a href='Gallery.jsp' id='title'>glory florist</a>
+            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='Login.jsp' class='link'>account</a>
 
-            <div class="siteName">
-                glory florist
+            <div id='background'>
+              <div class='line'></div>
+              <div class='line' id='middle'></div>
+              <div class='line'></div>
             </div>
+          </div>
 
-            <div class="others">
-                <div>
-                    Gallery
-                </div>
-                <div>
-                    View my Order
-                </div>                
-            </div>
-            <div class="points" >
-                My Points: 67p
-            </div> 
-        </header>
+          <div id='subheader'>
+            <a id='arrows'> > </a>
+            <a id='page'>Redeem reward</a>
+          </div>
         <h1>Your current points are: <label style="color: #e8a816; text-shadow: 1px 1px 15px orange;">67p</label></h1><br/>
         <div class="content">
             <h3>You may redeem any of the following reward</h3>

@@ -11,7 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
+        <link href="CSS/All.css" rel="stylesheet"/>
+        <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <link href="CSS/Flower.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -19,20 +20,24 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header>
-            <div class="siteName">
-                glory florist
-            </div>
-            <div class="others">
-                <div>
-                    Gallery
-                </div>
-                <div>
-                    View my Order
-                </div>
-            </div>
+          <div id='header'>
+            <a href='Gallery.jsp' class='link'>home</a>
+            <a href='Gallery.jsp' class='link'>shop</a>
+            <a href='Gallery.jsp' id='title'>glory florist</a>
+            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='Login.jsp' class='link'>account</a>
 
-        </header>
+            <div id='background'>
+              <div class='line'></div>
+              <div class='line' id='middle'></div>
+              <div class='line'></div>
+            </div>
+          </div>
+
+          <div id='subheader'>
+            <a id='arrows'> > </a>
+            <a id='page'>Product</a>
+          </div>
         <div class="main">
             <div class="image">
                 <img src="https://www.wenghoa.com/pub/media/catalog/product/cache/cf3f2243ef4940fd5c66f2ff035145ac/j/f/jf_fl_1143_bouquet_of_101_pink_roses.jpg"/>

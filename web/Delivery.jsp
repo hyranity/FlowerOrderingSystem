@@ -14,23 +14,30 @@
 
         <link href="CSS/delivery.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
+        <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
+        <link href="CSS/All.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Address</title>
     </head>
     <body>
-        <header>
-            <div class="siteName">
-                glory florist
+          <div id='header'>
+            <a href='Gallery.jsp' class='link'>home</a>
+            <a href='Gallery.jsp' class='link'>shop</a>
+            <a href='Gallery.jsp' id='title'>glory florist</a>
+            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='Login.jsp' class='link'>account</a>
+
+            <div id='background'>
+              <div class='line'></div>
+              <div class='line' id='middle'></div>
+              <div class='line'></div>
             </div>
-            <div class="others">
-                <div>
-                    Gallery
-                </div>
-                <div>
-                    View my Order
-                </div>
-            </div>
-        </header>
+          </div>
+
+          <div id='subheader'>
+            <a id='arrows'> > </a>
+            <a id='page'>Delivery</a>
+          </div>
 
         <div class="main">
             <h2>Your Information.</h2>

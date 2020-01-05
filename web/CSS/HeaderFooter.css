@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Josefin+Sans&display=swap');
+a:hover {text-decoration: none;}
 #header {
   display: flex;
   flex-direction: row;
@@ -25,7 +26,7 @@
 }
 #header #background {
   position: absolute;
-  heigth: 100%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;

@@ -10,6 +10,8 @@ h2{
     margin-top: 100px;
 }
 
+h2, h3 {font-family: Josefin Sans;}
+
 .backBt{
     background-color:  #660066;
     color: white;

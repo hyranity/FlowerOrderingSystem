@@ -14,24 +14,31 @@
 
         <link href="CSS/EditOrder.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
+        <link href="CSS/All.css" rel="stylesheet"/>
+        <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
         <!-- HEADER -->
-        <header>
-            <div class="siteName">
-                glory florist
+          <div id='header'>
+            <a href='Gallery.jsp' class='link'>home</a>
+            <a href='Gallery.jsp' class='link'>shop</a>
+            <a href='Gallery.jsp' id='title'>glory florist</a>
+            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='Login.jsp' class='link'>account</a>
+
+            <div id='background'>
+              <div class='line'></div>
+              <div class='line' id='middle'></div>
+              <div class='line'></div>
             </div>
-            <div class="others">
-                <div>
-                    Gallery
-                </div>
-                <div>
-                    View my Order
-                </div>
-            </div>
-        </header>
+          </div>
+
+          <div id='subheader'>
+            <a id='arrows'> > </a>
+            <a id='page'>Edit order</a>
+          </div>
         <h2>Edit my order</h2>
         <form action="MyOrder.jsp">
         <div class='main'>
@@ -61,10 +68,10 @@
         <br/>
         <br/>
         <div class="cancelBt" id="cancel">
-                    Cancel changes
+            <a style='color: white;'>Cancel changes</a>
                 </div>
                 <div class="confirmBt" id="confirm">
-                    Confirm changes
+                    <a style='color: white'>Confirm changes</a>
                 </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

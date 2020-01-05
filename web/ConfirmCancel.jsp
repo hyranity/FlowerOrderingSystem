@@ -14,32 +14,39 @@
 
         <link href="CSS/ConfirmCancel.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
+        <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
+        <link href="CSS/All.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
         <!-- HEADER -->
-        <header>
-            <div class="siteName">
-                glory florist
+          <div id='header'>
+            <a href='Gallery.jsp' class='link'>home</a>
+            <a href='Gallery.jsp' class='link'>shop</a>
+            <a href='Gallery.jsp' id='title'>glory florist</a>
+            <a href='MyOrder.jsp' class='link'>order</a>
+            <a href='Login.jsp' class='link'>account</a>
+
+            <div id='background'>
+              <div class='line'></div>
+              <div class='line' id='middle'></div>
+              <div class='line'></div>
             </div>
-            <div class="others">
-                <div>
-                    Gallery
-                </div>
-                <div>
-                    View my Order
-                </div>
-            </div>
-        </header>
+          </div>
+
+          <div id='subheader'>
+            <a id='arrows'> > </a>
+            <a id='page'>Confirm cancel</a>
+          </div>
         <h2>Order cancelled.</h2>
         <h3>Your order of "Love Bouquet" has been successfully cancelled.</h3>
         <h3>You will be refunded within 2-3 business days.</h3>
                <div class="revertBt" id="close">
-                    Revert
+                   <a style="color: white">Revert</a>
                 </div>
         <div class="backBt">
-                I understand.
+            <a style="color: white">I understand.</a>
             </div>
          <h5>If you change your mind, you can revert back. If you navigate away from this page, the cancellation is final.</h5>
 

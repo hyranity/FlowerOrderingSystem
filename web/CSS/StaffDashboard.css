@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Josefin+Sans&display=swap");
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: #33334d;
+  font-family: Josefin Sans;
+  text-decoration: none;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#list .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#list .row .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff3ff;
+  padding: 50px;
+  margin: 15px;
+  height: 100px;
+  width: 275px;
+  transition: background-color 0.3s;
+}
+#list .row .card #name {
+  font-weight: bold;
+  font-size: 35px;
+  position: absolute;
+  z-index: 1;
+  transition: margin-top 0.3s, color 0.3s;
+}
+#list .row .card #backdrop {
+  font-size: 35px;
+  font-weight: bold;
+  opacity: 0.05;
+  margin-top: 15px;
+  margin-left: 15px;
+  z-index: 0;
+  transition: margin-top 0.3s, color 0.3s;
+}
+#list .row .card #description {
+  font-size: 20px;
+  width: 275px;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  transition: opacity 0.3s, margin-top 0.3s, color 0.3s;
+}
+#list .row .card:hover {
+  background-color: white;
+}
+#list .row .card:hover #name {
+  margin-top: -20px;
+  color: #660066;
+}
+#list .row .card:hover #backdrop {
+  margin-top: -25px;
+  color: #660066;
+}
+#list .row .card:hover #description {
+  margin-top: 20px;
+  opacity: 1;
+  color: #a4a4c1;
+}

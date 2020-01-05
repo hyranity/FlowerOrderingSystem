@@ -42,29 +42,16 @@
                 </div>
                 <div id='items'>
                   <div id='item'>
-                    <img src='https://image.flaticon.com/icons/svg/826/826981.svg'>
-                    <a id='count'>3</a>
-                  </div>
-                  <div id='item'>
                     <img src='https://image.flaticon.com/icons/svg/1762/1762755.svg'>
-                    <a id='count'>2</a>
-                  </div>
-                  <div id='item'>
-                    <img src='https://image.flaticon.com/icons/svg/2421/2421531.svg'>
-                    <a id='count'>1</a>
+                    <a id='name'><b>Pink Hibiscus</b><br>RM 15.00</a>
                   </div>
                 </div>
                 <div id='payment'>
-                  <a id='price'>RM 150</a>
-                  <div id='status'>
-                    <input type="radio" name="status_OR001" value="value" id='paid_OR001'>
-                    <label class='option' for='paid_OR001'>Paid</label>
-                    <input type="radio" name="status_OR001" value="value" id='pending_OR001'>
-                    <label class='option' for='pending_OR001'>Pending</label>
-                  </div>
-                </div>
-                <div id='buttons'>
-                  <input type='submit' id='save' value='✔'>
+                  <input type="radio" name="status_OR001" value="value" id='paid_OR001'>
+                  <label class='option' for='paid_OR001'>Paid</label>
+                  <input type="radio" name="status_OR001" value="value" id='pending_OR001'>
+                  <label class='option' for='pending_OR001'>Pending</label>
+                  <input type='submit' class='save' id='save_OR001' value='✔'>
                 </div>
               </div>
 
@@ -77,29 +64,16 @@
                 </div>
                 <div id='items'>
                   <div id='item'>
-                    <img src='https://image.flaticon.com/icons/svg/826/826981.svg'>
-                    <a id='count'>3</a>
-                  </div>
-                  <div id='item'>
                     <img src='https://image.flaticon.com/icons/svg/1762/1762755.svg'>
-                    <a id='count'>2</a>
-                  </div>
-                  <div id='item'>
-                    <img src='https://image.flaticon.com/icons/svg/2421/2421531.svg'>
-                    <a id='count'>1</a>
+                    <a id='name'><b>Pink Hibiscus</b><br>RM 15.00</a>
                   </div>
                 </div>
                 <div id='payment'>
-                  <a id='price'>RM 150</a>
-                  <div id='status'>
-                    <input type="radio" name="status_OR002" value="value" id='paid_OR002'>
-                    <label class='option' for='paid_OR002'>Paid</label>
-                    <input type="radio" name="status_OR002" value="value" id='pending_OR002'>
-                    <label class='option' for='pending_OR002'>Pending</label>
-                  </div>
-                </div>
-                <div id='buttons'>
-                  <input type='submit' id='save' value='✔'>
+                  <input type="radio" name="status_OR002" value="value" id='paid_OR002'>
+                  <label class='option' for='paid_OR002'>Paid</label>
+                  <input type="radio" name="status_OR002" value="value" id='pending_OR002'>
+                  <label class='option' for='pending_OR002'>Pending</label>
+                  <input type='submit' class='save' id='save_OR002' value='✔'>
                 </div>
               </div>
 
@@ -112,29 +86,16 @@
                 </div>
                 <div id='items'>
                   <div id='item'>
-                    <img src='https://image.flaticon.com/icons/svg/826/826981.svg'>
-                    <a id='count'>3</a>
-                  </div>
-                  <div id='item'>
-                    <img src='https://image.flaticon.com/icons/svg/1762/1762755.svg'>
-                    <a id='count'>2</a>
-                  </div>
-                  <div id='item'>
                     <img src='https://image.flaticon.com/icons/svg/2421/2421531.svg'>
-                    <a id='count'>1</a>
+                    <a id='name'><b>Orange Dandelion</b><br>RM 8.25</a>
                   </div>
                 </div>
                 <div id='payment'>
-                  <a id='price'>RM 150</a>
-                  <div id='status'>
-                    <input type="radio" name="status_OR003" value="value" id='paid_OR003'>
-                    <label class='option' for='paid_OR003'>Paid</label>
-                    <input type="radio" name="status_OR003" value="value" id='pending_OR003'>
-                    <label class='option' for='pending_OR003'>Pending</label>
-                  </div>
-                </div>
-                <div id='buttons'>
-                  <input type='submit' id='save' value='✔'>
+                  <input type="radio" name="status_OR003" value="value" id='paid_OR003'>
+                  <label class='option' for='paid_OR003'>Paid</label>
+                  <input type="radio" name="status_OR003" value="value" id='pending_OR003'>
+                  <label class='option' for='pending_OR003'>Pending</label>
+                  <input type='submit' class='save' id='save_OR003' value='✔'>
                 </div>
               </div>
 
@@ -148,28 +109,15 @@
                 <div id='items'>
                   <div id='item'>
                     <img src='https://image.flaticon.com/icons/svg/826/826981.svg'>
-                    <a id='count'>3</a>
-                  </div>
-                  <div id='item'>
-                    <img src='https://image.flaticon.com/icons/svg/1762/1762755.svg'>
-                    <a id='count'>2</a>
-                  </div>
-                  <div id='item'>
-                    <img src='https://image.flaticon.com/icons/svg/2421/2421531.svg'>
-                    <a id='count'>1</a>
+                    <a id='name'><b>Red Rose</b><br>RM 10.50</a>
                   </div>
                 </div>
                 <div id='payment'>
-                  <a id='price'>RM 150</a>
-                  <div id='status'>
-                    <input type="radio" name="status_OR004" value="value" id='paid_OR004'>
-                    <label class='option' for='paid_OR004'>Paid</label>
-                    <input type="radio" name="status_OR004" value="value" id='pending_OR004'>
-                    <label class='option' for='pending_OR004'>Pending</label>
-                  </div>
-                </div>
-                <div id='buttons'>
-                  <input type='submit' id='save' value='✔'>
+                  <input type="radio" name="status_OR004" value="value" id='paid_OR004'>
+                  <label class='option' for='paid_OR004'>Paid</label>
+                  <input type="radio" name="status_OR004" value="value" id='pending_OR004'>
+                  <label class='option' for='pending_OR004'>Pending</label>
+                  <input type='submit' class='save' id='save_OR004' value='✔'>
                 </div>
               </div>
 

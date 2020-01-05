@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Josefin+Sans&display=swap');
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  width: 100%;
+}
+#header a {
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: color 0.3s;
+  z-index: 1;
+}
+#header a:hover {
+  color: #660066;
+}
+#header #title {
+  font-size: 50px;
+  font-weight: bold;
+}
+#header .link {
+  font-size: 20px;
+}
+#header #background {
+  position: absolute;
+  heigth: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+#header #background .line {
+  height: 5px;
+  width: 20%;
+  background-color: #660066;
+}
+#header #background #middle {
+  width: 60%;
+  background-color: transparent;
+}
+#subheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+#subheader #arrows {
+  font-size: 45px;
+  font-weight: bold;
+  color: #33334d;
+  margin-top: -5px;
+}
+#subheader #page {
+  margin-left: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #a4a4c1;
+}

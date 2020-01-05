@@ -49,13 +49,6 @@
                 <input type="text" placeholder="Email" data-toggle="tooltip" data-placement="bottom" title="Your email address" required>
                 <br/>
                 <br/>
-                <h3>Delivery address</h3>
-                <input type="text" placeholder="Building, Street, and etc.."required>
-                <input type="text" placeholder="Postal Code" required> 
-                <input type="text" placeholder="State" required> 
-                <input type="text" placeholder="Area" required>  
-                <br/>
-                <br/>
                 <h3>Summary</h3>
                 <h4 data-toggle="tooltip" data-placement="bottom" title="This is the arrangement itself.">Love Bouquet</h4>
                 <h4 data-toggle="tooltip" data-placement="bottom" title="This is the arrangement cost itself." style="float: right;">RM100</h4>
@@ -88,7 +81,7 @@
 });
             
             $(".backBt").click(function(){
-                window.location.href="flower.jsp";
+                window.location.href="afterDelivery.jsp";
             });
             $(".payBt").click(function(){
                 $(".submitBt").trigger("click");       

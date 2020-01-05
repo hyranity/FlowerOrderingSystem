@@ -22,20 +22,23 @@ form{
     color: white;
     padding: 40px;
     margin: 0;
-    text-align: center;
+    text-align: left;
     box-shadow: 0px 0px 15px  2px #660066;
 }
 
 form input[type=text]{
-    background-color: transparent;
-    outline: none;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom-width: 5px;
-    border-bottom-color: white;
+    width: 50%;
+    background-color: #660066;
+    color: white;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    display: inline-block;
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 form input[type=text]::placeholder{
@@ -44,15 +47,14 @@ form input[type=text]::placeholder{
 }
 
 form h3{
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 form h4{
-
-    margin-top: 20px;
+    margin-top: 40px;
     font-weight: bold;
     font-size: 23px;
     display: inline-block;
@@ -117,14 +119,45 @@ form h5{
     padding: 1.25rem 1.5rem 0;
 }
 
-.item .pracel{
-    line-height: 1.5rem;
-    font-weight: 500;
-    font-size: 20px;
+.buttonDiv{
+    transition: 0.2s;
+    border-radius: 16px;
+    margin-top: 40px;
+    text-align: center;
+    display: inline-block;
+    background-color:  white;
+    color: red;
+    font-weight: bold;
+    width: 50%;
 }
 
-.item .status{
+.buttonDiv p, .buttonDiv cal{
+    display: inline-block;
     font-size: 20px;
-    line-height: 1.1875rem;
-    color: rgba(0,0,0,.54);
+    margin-top:10px;
+}
+
+.buttonDiv cal{
+    margin-right: 1px;
+}
+
+.buttonDiv:hover{
+    background-color:  #00FF00;
+    color: white;
+}
+
+.attemptNext{
+    background-color: #660066;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    margin-left: 0;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0px 0px 10px  2px #660066;
+    opacity: 0.3;
 }

@@ -50,7 +50,7 @@
                 <div class="customize">
                     <h2 style='font-size: 35px; text-shadow: 1px 1px 20px #660066;'>Personalize your order.</h2>
                     <h4 style="margin-top: 10px; margin-bottom: 40px; font-weight: bold; color: #660066">Hover over each field for more info</h4>
-                    <form id="customizerForm" action="Payment.jsp">
+                    <form id="customizerForm" action="Delivery.jsp">
                         <p class="flowerNo">6</p> <p id="stalkText">stalks</p>
                         <input data-toggle="tooltip" data-placement="bottom" title="Drag to adjust the number of stalks you want." class="slider" type="range" min="1" max="12" value="6"/>
                         <div class="section" data-toggle="tooltip" data-placement="bottom" title="What kind of flower you want give.">

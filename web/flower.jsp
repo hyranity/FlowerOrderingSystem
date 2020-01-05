@@ -124,7 +124,7 @@
                 var regex = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
                 // REGEX thanks to ic3b3rg @ https://stackoverflow.com/questions/16462297/regex-for-date-validation-in-javascript
                 if (!string.match(regex)) {
-                    $("#errorMessage").text("Ensure that your date is in dd/MM/yyyy format.");
+                    $("#errorMessage").text("Ensure that your date is in day/month/year format.");
                     $(".buttonDiv").css("pointer-events", "none");
                     $(".buttonDiv").css("opacity", "0.5");
                 } else {

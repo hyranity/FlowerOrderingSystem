@@ -50,7 +50,7 @@
                     <p class="cal" style="color: white;">Calculate distance fee<p>
                 </div>
                 <br/>
-                <h4>Delivery charges: </h4> <h4 style="color: coral;">RM 5</h4> <br/>
+                <h4>Delivery charges: </h4> <h4 style="color: coral;">RM 120</h4> <br/>
                 
             </form>
             <div class="backBt" id="back">

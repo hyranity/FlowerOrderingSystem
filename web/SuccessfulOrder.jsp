@@ -40,17 +40,26 @@
           </div>
         <h2>Order successfully placed.</h2>
         <h3>Your order of "Love Bouquet" has been successfully processed.</h3>
-        <h3>If you would like to view your order details (as well as edit, cancel, or track it), use "View my Order" and key in your Order ID.</h3>
+        <h3>If you would like to view your order details (as well as edit, cancel, or track it), click "order" at the top and key in your Order ID.</h3>
         <h3>Your Order ID as well as other relevant details have been emailed to you.</h3>
+        <div class="revertBt" id="agreeBt">
+               Revert
+            </div>
         <div class="backBt" id="agreeBt">
                 I understand.
             </div>
+         <h5>If you change your mind, you can revert back. If you navigate away from this page, the order will be final.</h5>
+
+        
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             $("#agreeBt").click(function(){
                 window.location.href="Gallery.jsp";
+            });
+            $(".revertBt").click(function(){
+                window.location.href="Payment.jsp";
             });
         });
     </script>

@@ -57,7 +57,9 @@
                 <br/>
                 <h3>Summary</h3>
                 <h4 data-toggle="tooltip" data-placement="bottom" title="This is the arrangement itself.">Love Bouquet</h4>
-                <h4 data-toggle="tooltip" data-placement="bottom" title="This is the arrangement cost itself." style="float: right;">RM100</h4>
+                <br/>
+                <h5 data-toggle="tooltip" data-placement="bottom" title="This is the arrangement cost itself.">Arrangement costs</h5>
+                <h5 data-toggle="tooltip" data-placement="bottom" title="This is the arrangement cost itself." style="float: right;">RM100</h5>
                 <br/>
                 <h5 data-toggle="tooltip" data-placement="bottom" title="This shows how many stalks you ordered and what type of flowers are they.">Rose, 12 stalks</h5>
                 <h5 data-toggle="tooltip" data-placement="bottom" title="This shows how stalks you ordered and what type of flowers are they." style="float: right;">RM12 x 12</h5>

@@ -79,34 +79,34 @@
                 </tr>
                <tr>
                     <td class="cell" id="first">
-                        <img class="image" src="http://assets.eflorist.com/assets/products/PHR_/T282-9A.jpg"/>
+                        <img class="image" src="https://cdn.store-assets.com/s/223946/i/7527931.jpeg"/>
                         <div class="info">
-                            <h3>Springtime</h3>
-                            <p class="description">The breath in the garden that would make any loved one smile.</p>
+                            <h3>Summer Hands</h3>
+                            <p class="description">A bouquet that encapsulates the power of the hot season.</p>
                             <p class="price">RM220</p>
                         </div>
                     </td>
                     <td class="cell">
-                        <img class="image" src="https://www.wenghoa.com/pub/media/catalog/product/cache/cf3f2243ef4940fd5c66f2ff035145ac/j/f/jf_fl_1143_bouquet_of_101_pink_roses.jpg"/>
+                        <img class="image" src="https://img.floweradvisor.com/p/12-blue-roses-dyed-or-sprayed-hand-bouquet-fa4268"/>
                         <div class="info">
-                            <h3>Love Bouquet</h3>
-                            <p class="description">This is the best gift for your loved one, whenever the occasion!</p>
+                            <h3>Waterfall</h3>
+                            <p class="description">An arrangement that depicts love as a rapid waterfall.</p>
                             <p class="price">RM260</p>
                         </div>
                     </td>
                     <td class="cell">
-                        <img class="image" src="https://floralgaragesg.com/wp-content/uploads/2015/10/Colourful-Roses-Bouquet-R04"/>
+                        <img class="image" src="https://www.wenghoa.com/pub/media/catalog/product/cache/cf3f2243ef4940fd5c66f2ff035145ac/j/f/jf_fl_1137_sunflower_with_hand_tied_bouquet.jpg"/>
                         <div class="info">
-                            <h3>Spectrum</h3>
-                            <p class="description">The colors of the world right in your home.</p>
+                            <h3>My Sunshine</h3>
+                            <p class="description">Show your loved one what he/she truly means to you.</p>
                             <p class="price">RM140</p>
                         </div>
                     </td>
                     <td class="cell">
-                        <img class="image" src="https://images-na.ssl-images-amazon.com/images/I/81oXSN3OxNL._SY445_.jpg"/>
+                        <img class="image" src="https://www.giflorist.com.my/image/cache/catalog/products/TulipBouquet04-600x600.jpg"/>
                         <div class="info">
-                            <h3>Majestic Forest</h3>
-                            <p class="description">Extremely elegant arrangement for the office.</p>
+                            <h3>Mystic Rune</h3>
+                            <p class="description">Love is a mystery. And so is this arrangement.</p>
                             <p class="price">RM250</p>
                         </div>
                     </td>

@@ -39,7 +39,7 @@
             <a id='page'>My order</a>
           </div>
         <h2>Here's your order.</h2>
-        <h4 style="margin-top: -15px; margin-bottom: 40px; font-weight: bold; color: #660066;">Hover over each field for more info</h4><br/>
+        <h4 style="margin-top: -15px; margin-bottom: 40px; font-weight: bold; color: #660066;">Hover over each item for more info</h4><br/>
         <h3 style="text-align: center; display: inline-block; margin-top: -100px; margin-bottom: 20px; color: coral; text-shadow: 1px 1px 20px coral;">Cancellation has been reverted.</h3>
         
                    
@@ -111,8 +111,7 @@
         <div class="overlay2">
             <div class="confirm">
                 <h3>Once you click confirm</h3>
-                <p>Your payment will be send to the seller. Hence, your item has received</p>
-                <p style="color: red;">No refund</p>
+                <p>You are declaring that you have received your item.</p>
                 <div class="trackBt" id="close2">
                     Cancel
                 </div>

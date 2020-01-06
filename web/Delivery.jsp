@@ -17,7 +17,7 @@
         <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <link href="CSS/All.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Address</title>
+        <title>Delivery address</title>
     </head>
     <body>
           <div id='header'>
@@ -42,20 +42,20 @@
         <div class="main">
             <h2>Your Information.</h2>
             <h4 style="margin-top: -15px; margin-bottom: 40px; font-weight: bold;">Key in all information to process to payment</h4>
-            <form >
+            <form action="afterDelivery.jsp">
                 <h3>Delivery address</h3>
                 <input type="text" placeholder="Building, Street, and etc.." required> <br/>
                 <input type="text" placeholder="Postal Code" required> <br/>
                 <input type="text" placeholder="Area" required> <br/>
                 <input type="text" placeholder="State" required>  <br/>
                 
-                <div class="buttonDiv" >
-                    <p class="cal" action="afterDelivery.jsp">Calculate distance fee<p>
+                <div class="buttonDiv" id="calculate">
+                    <p class="cal">Calculate distance fee<p>
                 </div>
                 
                 <br/>
                 <h4>Delivery charges: </h4> <h4>__</h4>
-                
+                <button type="submit" id="submitBt" style="display: none;"/>
             </form>
             <div class="backBt" id="back">
                 Back
@@ -68,6 +68,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+            $("#calculate").click(function(){
+                $("#submitBt").trigger("click");  
+            });
             $("#back").click(function(){
                 window.location.href="flower.jsp";
             });

@@ -33,27 +33,37 @@
 
           <div id='list'>
 
-            <div class='row'>
+              <div class='row'>
+    
+                <div class='card' onclick='location.href="ProductsList.jsp";'>
+                  <a id='name'>Products list</a>
+                  <a id='backdrop'>Products list</a>
+                  <a id='description'>View, edit or remove available products.</a>
+                </div>
 
-              <div class='card' onclick='location.href="ProductsList.jsp";'>
-                <a id='name'>Products list</a>
-                <a id='backdrop'>Products list</a>
-                <a id='description'>View, edit or remove available products.</a>
+                <div class='card' onclick='location.href="CustomerOrders.jsp";'>
+                  <a id='name'>Customer orders</a>
+                  <a id='backdrop'>Customer orders</a>
+                  <a id='description'>View or modify customer orders.</a>
+                </div>
+
               </div>
 
-              <div class='card' onclick='location.href="CustomerOrders.jsp";'>
-                <a id='name'>Customer orders</a>
-                <a id='backdrop'>Customer orders</a>
-                <a id='description'>View or modify customer orders.</a>
-              </div>
+              <div class='row'>
 
-              <div class='card' onclick='location.href="StaffLogin.jsp";'>
-                <a id='name'>Logout</a>
-                <a id='backdrop'>Logout</a>
-                <a id='description'>Log out from the staff account.</a>
-              </div>
+                <div class='card' onclick='location.href="AddProduct.jsp";'>
+                  <a id='name'>Add product</a>
+                  <a id='backdrop'>Add product</a>
+                  <a id='description'>Add a new product to the products list.</a>
+                </div>
 
-            </div>
+                <div class='card' onclick='location.href="StaffLogin.jsp";'>
+                  <a id='name'>Logout</a>
+                  <a id='backdrop'>Logout</a>
+                  <a id='description'>Log out from the staff account.</a>
+                </div>
+
+              </div>
 
           </div>
 

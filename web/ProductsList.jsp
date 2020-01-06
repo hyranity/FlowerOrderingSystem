@@ -34,6 +34,53 @@
             <a id='arrows'> > </a>
             <a id='page'>Products list</a>
           </div>
+            
+        <div id='info'>
+          <a id='description'>View, edit or remove available products. <span id='back' onclick='location.href="StaffDashboard.jsp";'>Back.</span></a>
+          <input type='checkbox' name="toggle" id='toggle'>
+          <label id='toggle_text' for='toggle'>Help!</label>
+
+          <div id='hidden'>
+
+            <div class='panel'>
+              <a id='heading'>The cards</a>
+              <a id='description'>
+                Each of the cards below represents one customer order, displayed in the following format:
+                <br><br>
+                <b>Product code</b>, product image, product name, product price.
+              </a>
+            </div>
+
+            <div class='panel'>
+              <a id='heading'>Editing details</a>
+              <a id='description'>
+                To edit the details of a product, click on the detail you want to edit, and replace the existing value with a new value.
+                <br><br>
+                <b>eg.</b> Replace the name <b>Pink Hibiscus</b> with <b>Red Rose</b>.
+              </a>
+            </div>
+
+            <div class='panel'>
+              <a id='heading'>Saving changes</a>
+              <a id='description' style='line-height: 28px;'>
+                To save any changes you've made to a particular product, click the
+                <span style='background-color: #33334d; color: rgb(255, 243, 255); padding-top: 8px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;'>✔</span>
+                button.
+              </a>
+            </div>
+
+            <div class='panel' style='width: 265px'>
+              <a id='heading'>Removing products</a>
+              <a id='description' style='line-height: 28px;'>
+                To remove a particular product from the list, click the
+                <span style='background-color: rgba(255, 51, 51, 0.6); color: rgb(255, 243, 255); padding-top: 8px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;'>✘</span>
+                button.
+              </a>
+            </div>
+
+          </div>
+
+        </div>
  
           <div id='list'>
 

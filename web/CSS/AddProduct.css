@@ -95,132 +95,106 @@ a {
 }
 #info #toggle:checked ~ #hidden {
   margin-top: 50px;
-  height: 225px;
+  height: 200px;
   opacity: 1;
 }
-#list {
+#form {
+  background-color: #fff3ff;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
-#list .row {
+#form #details {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-#list .row .card { z-index: 1;
+#form #details #left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff3ff;
-  padding: 50px;
-  margin: 15px;
-  transition: background-color 0.3s;
 }
-#list .row .card #details { z-index: 1;
+#form #details #left img {
+  width: 100px;
+}
+#form #details #left #button {
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#form #details #left img:hover + #button {
+  opacity: 1;
+}
+#form #details #left #button:hover {
+  opacity: 1;
+}
+#form #details #right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-left: 25px;
 }
-#list .row .card #details #code { z-index: 1;
-  font-size: 35px;
-  font-weight: bold;
+#form #details #right .detail {
   z-index: 1;
-}
-#list .row .card #details #name { z-index: 1;
-  font-size: 25px;
-  z-index: 1;
-}
-#list .row .card #details #date { z-index: 1;
-  font-size: 18px;
-  z-index: 1;
-  margin-top: 2px;
-}
-#list .row .card #details #backdrop { z-index: 1;
-  font-size: 45px;
-  opacity: 0.1;
-  margin-top: -15px;
-  margin-left: 1px;
-  z-index: 0;
-  position: absolute;
-}
-#list .row .card #items { z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 25px;
-}
-#list .row .card #items #item { z-index: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-#list .row .card #items #item img { z-index: 1;
-  width: 50px;
-}
-#list .row .card #items #item #count { z-index: 1;
-  margin-top: 40px;
-  margin-left: -10px;
-  font-weight: bold;
-  font-size: 30px;
-}
-#list .row .card #items #item #name { z-index: 1;
-  font-size: 18px;
-  margin-left: 10px;
-  margin-top: 5px;
-  width: 120px;
-}
-#list .row .card #items #item #name b { z-index: 1;
-  font-size: 20px;
-}
-#list .row .card #payment { z-index: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 25px;
-}
-#list .row .card #payment .option { z-index: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(140, 140, 217, 0.3);
   font-family: Josefin Sans;
-  font-size: 17px;
-  padding: 10px;
-  transition: color 0.3s, background-color 0.3s, border 0.3s;
+  width: 200px;
+  color: #33334d;
+  transition: width 0.3s;
 }
-#list .row .card #payment input[type='radio'] { z-index: 1;
-  height: 0px;
-  width: 0px; 
+#form #details #right .detail::placeholder {
+  color: #8c8cd9;
 }
-#list .row .card #payment [id^=paid] + .option {
-  border: 1px solid rgba(0, 153, 51, 0.6);
+#form #details #right .detail:focus {
+  outline: none;
+  width: 300px;
 }
-#list .row .card #payment [id^=pending] + .option {
+#form #details #right #name {
+  font-size: 30px;
+  font-weight: bold;
+}
+#form #details #right #price {
+  margin-top: 10px;
+  font-size: 25px;
+}
+#form #buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+#form #buttons .reset {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  color: #33334d;
+  background-color: #fff3ff;
   border: 1px solid rgba(255, 51, 51, 0.6);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
-#list .row .card #payment [id^=paid]:hover + .option {
-  color: #093;
-  border: 1px solid rgba(240, 240, 245, 0.3);
-}
-#list .row .card #payment [id^=paid]:checked + .option {
-  color: #f0f0f5;
-  background-color: rgba(0, 153, 51, 0.6);
-  border: 1px solid rgba(240, 240, 245, 0.3);
-}
-#list .row .card #payment [id^=pending]:hover + .option {
-  color: #f33;
-  border: 1px solid rgba(240, 240, 245, 0.3);
-}
-#list .row .card #payment [id^=pending]:checked + .option {
-  color: #f0f0f5;
+#form #buttons .reset:hover {
   background-color: rgba(255, 51, 51, 0.6);
-  border: 1px solid rgba(240, 240, 245, 0.3);
+  border: 1px solid #fff3ff;
+  color: #f0f0f5;
 }
-#list .row .card #payment .save { z-index: 1;
+#form #buttons .reset:focus {
+  outline: none;
+}
+#form #buttons .add {
   font-family: Josefin Sans;
   font-size: 20px;
   font-weight: bold;
@@ -234,13 +208,10 @@ a {
   margin-left: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
-#list .row .card #payment .save:hover {
-  background-color: #fff3ff;
+#form #buttons .add:hover {
+  background-color: rgba(255, 51, 51, 0.05);
   color: #33334d;
 }
-#list .row .card #payment .save:focus {
+#form #buttons .add:focus {
   outline: none;
-}
-#list .row .card:hover {
-  background-color: white;
 }

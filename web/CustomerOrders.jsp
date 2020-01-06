@@ -29,6 +29,61 @@
             <a id='arrows'> > </a>
             <a id='page'>Customer orders</a>
           </div>
+            
+        <div id='info'>
+          <a id='description'>View or modify customer orders. <span id='back' onclick='location.href="StaffDashboard.jsp";'>Back.</span></a>
+          <input type='checkbox' name="toggle" id='toggle'>
+          <label id='toggle_text' for='toggle'>Help!</label>
+
+          <div id='hidden'>
+
+            <div class='panel'>
+              <a id='heading'>The cards</a>
+              <a id='description'>
+                Each of the cards below represents one customer order, displayed in the following format:
+                <br><br>
+                <b>Order code</b>, customer name, order date, <b>item name</b>, item price, <b>status</b>.
+              </a>
+            </div>
+
+            <div class='panel' style='width: 265px'>
+              <a id='heading'>Order statuses</a>
+              <a id='description' style='line-height: 28px;'>
+                If an order is set to
+                <span style='padding-top: 8px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; background-color: rgba(0, 153, 51, 0.6); color: #f0f0f5;'>Paid</span>
+                , that means it is <b>Paid</b>.
+                <br><br>
+                If an order is set to
+                <span style='padding-top: 8px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; background-color: rgba(255, 51, 51, 0.6); color: #f0f0f5;'>Pending</span>
+                , that means it is <b>Pending</b>.
+              </a>
+            </div>
+
+            <div class='panel'>
+              <a id='heading'>Updating statuses</a>
+              <a id='description'>
+                To set an order's status to <b>Paid</b>, click the
+                <span style='padding: 5px; border: 1px solid rgba(0, 153, 51, 0.6);'>Paid</span>
+                button.
+                <br><br>
+                To set an order's status to <b>Pending</b>, click the
+                <span style='padding: 5px; border: 1px solid rgba(255, 51, 51, 0.6);'>Pending</span>
+                button.
+              </a>
+            </div>
+
+            <div class='panel'>
+              <a id='heading'>Saving changes</a>
+              <a id='description' style='line-height: 28px;'>
+                To save any changes you've made to a particular order, click the
+                <span style='background-color: #33334d; color: rgb(255, 243, 255); padding-top: 8px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;'>✔</span>
+                button.
+              </a>
+            </div>
+
+          </div>
+
+        </div>
 
           <div id='list'>
 

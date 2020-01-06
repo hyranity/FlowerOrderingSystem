@@ -61,7 +61,7 @@
             <a id='page'>Confirm item</a>
           </div>
         <h2>Order received.</h2>
-        <h3>Your payment of "Love Bouquet" has been successfully made.</h3>
+        <h3>Your item of "Love Bouquet" has been successfully delivered.</h3>
         <h3>Enjoy your flower.</h3>
         <div class="backBt">
             Back to home

@@ -52,10 +52,10 @@
                 <div class="buttonDiv" id="calculate">
                     <p class="cal">Calculate distance fee<p>
                 </div>
-                
+                <button type="submit" id="submitBt" style="display: none;"></button>
                 <br/>
                 <h4>Delivery charges: </h4> <h4>__</h4>
-                <button type="submit" id="submitBt" style="display: none;"/>
+                
             </form>
             <div class="backBt" id="back">
                 Back

@@ -55,7 +55,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#agreeBt").click(function(){
+            $(".backBt").click(function(){
                 window.location.href="Gallery.jsp";
             });
             $(".revertBt").click(function(){

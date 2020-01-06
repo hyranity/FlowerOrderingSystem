@@ -38,7 +38,7 @@
         <h1>Your Profile</h1><br/>
         <form action="Registered.jsp" method="POST">
             <div class="content">
-                <h3>Click</h3>
+                <h3>Edit your profile below</h3>
                 <br/>
                 <label>Your name</label><br/>
                 <input style="color:#f29ad1" type="text" placeholder="Jodie Starling" value="Jodie Starling">

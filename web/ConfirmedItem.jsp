@@ -39,6 +39,7 @@
             <a id='page'>My order</a>
           </div>
         <h2>Confirmed order.</h2>
+        <h4 style="margin-top: -15px; margin-bottom: 40px; font-weight: bold; color: red;">This order already been delivered</h4> <br/>
                    <h4 style="margin-top: -15px; margin-bottom: 40px; font-weight: bold; color: #660066;">Hover over each item for more info</h4>
 <br/>
         <div class="main">

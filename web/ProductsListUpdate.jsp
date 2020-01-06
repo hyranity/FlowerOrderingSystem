@@ -81,6 +81,11 @@
           </div>
 
         </div>
+            
+          <a style='color: rgba(0, 153, 51, 0.6); font-weight: bold; font-size: 25px; z-index: 1;'>
+              Product P001 has been updated. 
+              <span style='color: #a4a4c1; text-decoration: underline;' onclick='location.href="ProductsList.jsp";'>Undo.</span>
+          </a>
  
           <div id='list'>
 
@@ -95,12 +100,12 @@
                   <div id='right'>
                     <a id='code'>P001</a>
                     <a id='backdrop'>P001</a>
-                    <input type='text' class='detail' id='name' name='name_P001' placeholder='name' value='Springtime' style='width: 150px;'>
+                    <input type='text' class='detail' id='name' name='name_P001' placeholder='name' value='Summertime' style='width: 150px;'>
                     <input type='text' class='detail' id='price' name='price_P001' placeholder='price' value='RM 130.00'>
                   </div>
                 </div>
                 <div id='buttons'>
-                  <input type='submit' class='save' id='save_P001' value='✔' onclick='location.href="ProductsListUpdate.jsp";'>
+                  <input type='submit' class='save' id='save_P001' value='✔'>
                   <input type='submit' class='remove' id='remove_P001' value='✘'>
                 </div>
               </div>
@@ -139,7 +144,7 @@
                 </div>
                 <div id='buttons'>
                   <input type='submit' class='save' id='save_P003' value='✔'>
-                  <input type='submit' class='remove' id='remove_P003' value='✘'>
+                  <input type='submit' class='remove' id='remove_P003' value='✘' onclick='location.href="ProductsListRemove.jsp";'>
                 </div>
               </div>
 

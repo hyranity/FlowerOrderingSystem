@@ -85,9 +85,9 @@
 
             </div>
 
-            <div id='buttons'>
+            <div id='buttons' style='z-index: 1;'>
               <input type='submit' class='reset' id='reset' value='Reset'>
-              <input type='submit' class='add' id='add' value='✔'>
+              <input type='submit' class='add' id='add' value='✔' onclick='location.href="StaffDashboardAdd.jsp";'>
             </div>
 
           </div>

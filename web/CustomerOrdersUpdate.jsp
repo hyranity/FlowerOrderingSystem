@@ -84,6 +84,11 @@
           </div>
 
         </div>
+            
+          <a style='color: rgba(0, 153, 51, 0.6); font-weight: bold; font-size: 25px; z-index: 1;'>
+              Status of Order OR003 has been updated to 'Paid'. 
+              <span style='color: #a4a4c1; text-decoration: underline;' onclick='location.href="CustomerOrders.jsp";'>Undo.</span>
+          </a>
 
           <div id='list'>
 
@@ -147,11 +152,11 @@
                   </div>
                 </div>
                 <div id='payment'>
-                  <input type="radio" name="status_OR003" value="value" id='paid_OR003'>
+                  <input type="radio" name="status_OR003" value="value" id='paid_OR003' checked>
                   <label class='option' for='paid_OR003'>Paid</label>
-                  <input type="radio" name="status_OR003" value="value" id='pending_OR003' checked>
+                  <input type="radio" name="status_OR003" value="value" id='pending_OR003'>
                   <label class='option' for='pending_OR003'>Pending</label>
-                  <input type='submit' class='save' id='save_OR003' value='✔' onclick='location.href="CustomerOrdersUpdate.jsp";'>
+                  <input type='submit' class='save' id='save_OR003' value='✔'>
                 </div>
               </div>
 

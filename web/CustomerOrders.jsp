@@ -99,7 +99,7 @@
                 <div id='items'>
                   <div id='item'>
                     <img src='https://image.flaticon.com/icons/svg/1762/1762755.svg'>
-                    <a id='name'><b>Pink Hibiscus</b><br>RM 15.00</a>
+                    <a id='name'><b>Springtime</b><br>RM 130.00</a>
                   </div>
                 </div>
                 <div id='payment'>
@@ -121,7 +121,7 @@
                 <div id='items'>
                   <div id='item'>
                     <img src='https://image.flaticon.com/icons/svg/1762/1762755.svg'>
-                    <a id='name'><b>Pink Hibiscus</b><br>RM 15.00</a>
+                    <a id='name'><b>Springtime</b><br>RM 130.00</a>
                   </div>
                 </div>
                 <div id='payment'>
@@ -143,7 +143,7 @@
                 <div id='items'>
                   <div id='item'>
                     <img src='https://image.flaticon.com/icons/svg/2421/2421531.svg'>
-                    <a id='name'><b>Orange Dandelion</b><br>RM 8.25</a>
+                    <a id='name' style='width: 150px;'><b>Majestic Forest</b><br>RM 110.00</a>
                   </div>
                 </div>
                 <div id='payment'>
@@ -165,7 +165,7 @@
                 <div id='items'>
                   <div id='item'>
                     <img src='https://image.flaticon.com/icons/svg/826/826981.svg'>
-                    <a id='name'><b>Red Rose</b><br>RM 10.50</a>
+                    <a id='name'><b>Mystic Rune</b><br>RM 250.00</a>
                   </div>
                 </div>
                 <div id='payment'>

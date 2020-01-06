@@ -17,6 +17,7 @@
         <link href="CSS/All.css" rel="stylesheet"/>
         <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Glory Florist</title>
     </head>
     <body>
         <!-- HEADER -->

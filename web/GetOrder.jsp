@@ -16,7 +16,7 @@
         <link href="CSS/GetOrder.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>View order</title>
     </head>
     <body>
         <!-- HEADER -->

@@ -16,7 +16,7 @@
         <link href="CSS/delivery.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Address</title>
+        <title>Delivery address</title>
     </head>
     <body>
           <div id='header'>

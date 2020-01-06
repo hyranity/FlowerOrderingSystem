@@ -16,7 +16,7 @@
         <link href="CSS/MyOrder.css" rel="stylesheet"/>
         <link href="CSS/header.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Customer order</title>
+        <title>Confirmed Item</title>
     </head>
     <body>
         <!-- HEADER -->
@@ -38,7 +38,7 @@
             <a id='arrows'> > </a>
             <a id='page'>My order</a>
           </div>
-        <h2>Here's your order.</h2>
+        <h2>Confirmed order.</h2>
                    <h4 style="margin-top: -15px; margin-bottom: 40px; font-weight: bold; color: #660066;">Hover over each item for more info</h4>
 <br/>
         <div class="main">
@@ -79,7 +79,7 @@
             <div class="attemptEdit">
                 Edit order
             </div>
-            <div class="trackBt" id="track">
+            <div class="trackBt" id="track" style="opacity: 0.5;">
                 Track order
             </div>
 
@@ -87,7 +87,7 @@
                 Cancel order
             </div>
             
-            <div class="statusBt" id="confirmOrder">
+            <div class="statusBt" id="confirmOrder" style="display: none;">
                 Confirm order
             </div>
         </div>
@@ -102,13 +102,10 @@
         </div>
         <div class="overlay2">
             <div class="confirm">
-                <h3>Once you click confirm</h3>
-                <p>You are declaring that you have received your item.</p>
+                <h3 id="errorMsg2">Once you click confirm</h3>
+                <p>Because the item has been already received.</p>
                 <div class="trackBt" id="close2">
-                    Back
-                </div>
-                <div class="statusBt" id="confirmStatus">
-                    Confirm
+                    I understand
                 </div>
             </div>
         </div>
@@ -117,7 +114,8 @@
     <script>
         $(document).ready(function () {
             $("#track").click(function () {
-                window.location.href="itemTrackSameDay.jsp";
+                $(".overlay2").css("display", "block");
+                $("#errorMsg2").text("You can't track your order.");
             });
             
             $(".attemptEdit").click(function () {

@@ -17,7 +17,7 @@
         <link href="CSS/HeaderFooter.css" rel="stylesheet"/>
         <link href="CSS/All.css" rel="stylesheet"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Confirm item</title>
     </head>
     <style>
         .redeemBtn{

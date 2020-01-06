@@ -42,7 +42,17 @@
         <p style="text-align: center; font-size: 30px; color: #660066; line-height: 1.8">You may now enjoy your membership the <br/>
         next time you make flower arrangement with us. <br/>This include points and reward redeeming.</p>
         <br/><br/>
-        <a href="Login.jsp"><button id="submit" class="submitBtn">Proceed to Login page</button></a>
+        <div class="submitBtn">
+            Proceed to Login page
+        </div>
 
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".submitBtn").click(function () {
+                window.location.href = "Login.jsp";
+            });            
+        });
+    </script>
 </html>

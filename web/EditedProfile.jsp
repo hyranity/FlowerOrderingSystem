@@ -40,35 +40,44 @@
             <div class="content">
                 <br/>
                 <label>Name</label><br/>
-                <a>Jodie Starling</a>
+                <a style="color:#f29ad1">Jodie Starling</a>
                 <br/>
                 <br/>
                 
                 <label>Email</label><br/>
-                <a>jodie@gmail.com</a>
+                <a style="color:#f29ad1">jodie@gmail.com</a>
                 <br/>
                 <br/>
                 
                 <label>Password</label><br/>
-                <a>j******</a>
+                <a style="color:#f29ad1">j******</a>
                 <br/>
                 <br/>
 
                 <label>Phone Number</label><br/>
-                <b style="color: yellow;">0120011223 (Updated)</b>
+                <a style="color: yellow;">0120011223 (Updated)</a>
                 <br/>
                 <br/>
                 
                 <label>Address</label><br/>
-                <a>89500 Penampang</a>
+                <a style="color:#f29ad1">89500 Penampang</a>
                 
             </div>
         </form>
-        <br/>
-        <a href="Gallery.jsp"><button id="submit" class="submitBtn">Return to Home</button></a>
-
+        <br/>        
+        <div class="submitBtn">
+            Return to Home
+        </div> 
 
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".submitBtn").click(function () {
+                window.location.href = "Gallery.jsp";
+            });            
+        });
+    </script>
 
 </html>
 

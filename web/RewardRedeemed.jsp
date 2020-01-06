@@ -41,8 +41,17 @@
         <br/><br/>
         <p style="text-align: center; font-size: 30px; color: #660066; line-height: 1.8">You may now enjoy <b>5% discount</b> on <br/>
         your next purchase.</p>
-        <br/><br/>
-        <a href="Gallery.jsp"><button id="submit" class="submitBtn">Return to Home</button></a>
-        
+        <br/><br/>        
+        <div class="submitBtn">
+            Return to Home
+        </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".submitBtn").click(function () {
+                window.location.href = "Gallery.jsp";
+            });            
+        });
+    </script>
 </html>

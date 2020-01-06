@@ -53,10 +53,22 @@
                 <input style="color:whitesmoke" type="text" placeholder="Address">
             </div>
         </form>
-        <br/>
-        <a href="Registered.jsp"><button id="submit" class="submitBtn">Submit</button></a>
-        <button id="reset" type="clear" class="resetBtn" >Reset</button>
+        <br/>       
+        <div class="submitBtn">
+            Submit
+        </div> 
+        <div class="resetBtn">
+            Reset
+        </div> 
 
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".submitBtn").click(function () {
+                window.location.href = "Registered.jsp";
+            });            
+        });
+    </script>
 
 </html>

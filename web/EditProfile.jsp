@@ -41,26 +41,37 @@
                 <h3>Click</h3>
                 <br/>
                 <label>Your name</label><br/>
-                <input style="color:whitesmoke" type="text" placeholder="Jodie Starling" value="Jodie Starling">
+                <input style="color:#f29ad1" type="text" placeholder="Jodie Starling" value="Jodie Starling">
                 <br/>
                 <label>Your current email</label><br/>
-                <input style="color:whitesmoke" type="text" placeholder="jodie@gmail.com" value="jodie@gmail.com">
+                <input style="color:#f29ad1" type="text" placeholder="jodie@gmail.com" value="jodie@gmail.com">
                 <br/>
                 <label>Your current password</label><br/>
-                <input style="color:whitesmoke" type="text" placeholder="j******" value="j******">
+                <input style="color:#f29ad1" type="text" placeholder="j******" value="j******">
                 
                 <br/>
                 <label>Your phone number</label><br/>
-                <input style="color:whitesmoke" type="text" placeholder="0123456789" value="0123456789">
+                <input style="color:#f29ad1" type="text" placeholder="0123456789" value="0123456789">
                 <br/>
                 <label>Your current address</label><br/>
-                <input style="color:whitesmoke" type="text" placeholder="89500 Penampang" value="89500 Penampang">
+                <input style="color:#f29ad1" type="text" placeholder="89500 Penampang" value="89500 Penampang">
             </div>
         </form>
-        <br/>
-        <a href="EditedProfile.jsp"><button id="submit" class="submitBtn">Save</button></a>
-        <button id="reset" type="clear" class="resetBtn" >Reset</button>
-
+        <br/>        
+        <div class="submitBtn">
+            Save
+        </div>
+        <div class="resetBtn">
+            Reset
+        </div>        
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".submitBtn").click(function () {
+                window.location.href = "EditedProfile.jsp";
+            });            
+        });
+    </script>
 
 </html>

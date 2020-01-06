@@ -52,6 +52,18 @@
                 <p>For staff members, <a href="StaffLogin.jsp" style='text-decoration: underline; color: white'>sign in here.</a></p>
             </div>
         </form>
-        <a href="Gallery.jsp"><button id="login" class="loginBtn">Login</button></a>
+        <br/>        
+        <div class="loginBtn">
+            Login
+        </div>
     </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".loginBtn").click(function () {
+                window.location.href = "Gallery.jsp";
+            });            
+        });
+    </script>
 </html>

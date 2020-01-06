@@ -21,17 +21,17 @@
     </head>
     <style>
         .redeemBtn{
-            background-color:  coral;
+            background-color: coral;
             color: white;
             padding: 5px;
             border-radius: 15px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
             text-align: center;
             font-size: 25px;
             margin: 20px;
-            margin-left: 0;
-            margin-top: 10px;
+            margin-left: 30px;
+            margin-top: 30px;
             font-weight: bold;
             display: inline-block;
             box-shadow: 0px 0px 10px  0px coral;
@@ -66,12 +66,17 @@
         <div class="backBt">
             Back to home
         </div>
-        <a href="PointsRedeemed.jsp"><button class="redeemBtn">Redeem my points now!</button></a>
+        <div class="redeemBtn">
+            Redeem my points now!
+        </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".backBt").click(function () {
+                window.location.href = "Gallery.jsp";
+            });
+            $(".redeemBtn").click(function () {
                 window.location.href = "Gallery.jsp";
             });
         });

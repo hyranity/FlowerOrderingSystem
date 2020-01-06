@@ -79,7 +79,18 @@
         <p><b>has been added into your account!</b></p>
         <br/>
         <p>You now have a total of 67points.</p>
-        <br/><br/>                
-        <a href="Gallery.jsp"><button class="return">Return to Home</button></a>
+        <br/><br/>                        
+        <div class="return">
+            Return to Home
+        </div>
+        
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".return").click(function () {
+                window.location.href = "Gallery.jsp";
+            });            
+        });
+    </script>
 </html>

@@ -95,8 +95,8 @@
                   <div id='right'>
                     <a id='code'>P001</a>
                     <a id='backdrop'>P001</a>
-                    <input type='text' class='detail' id='name' name='name_P001' placeholder='name' value='Pink Hibiscus' style='width: 150px;'>
-                    <input type='text' class='detail' id='price' name='price_P001' placeholder='price' value='RM 15.00'>
+                    <input type='text' class='detail' id='name' name='name_P001' placeholder='name' value='Springtime' style='width: 150px;'>
+                    <input type='text' class='detail' id='price' name='price_P001' placeholder='price' value='RM 130.00'>
                   </div>
                 </div>
                 <div id='buttons'>
@@ -114,8 +114,8 @@
                   <div id='right'>
                     <a id='code'>P002</a>
                     <a id='backdrop'>P002</a>
-                    <input type='text' class='detail' id='name' name='name_P002' placeholder='name' value='Orange Dandelion' style='width: 225px;'>
-                    <input type='text' class='detail' id='price' name='price_P002' placeholder='price' value='RM 8.00'>
+                    <input type='text' class='detail' id='name' name='name_P002' placeholder='name' value='Majestic Forest' style='width: 200px;'>
+                    <input type='text' class='detail' id='price' name='price_P002' placeholder='price' value='RM 110.00'>
                   </div>
                 </div>
                 <div id='buttons'>
@@ -133,8 +133,8 @@
                   <div id='right'>
                     <a id='code'>P003</a>
                     <a id='backdrop'>P003</a>
-                    <input type='text' class='detail' id='name' name='name_P003' placeholder='name' value='Red Rose' style='width: 125px;'>
-                    <input type='text' class='detail' id='price' name='price_P003' placeholder='price' value='RM 10.50'>
+                    <input type='text' class='detail' id='name' name='name_P003' placeholder='name' value='Mystic Rune' style='width: 150px;'>
+                    <input type='text' class='detail' id='price' name='price_P003' placeholder='price' value='RM 250.00'>
                   </div>
                 </div>
                 <div id='buttons'>
